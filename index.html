@@ -6,110 +6,435 @@
     <title>Louise Ferdinando</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap');
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Cormorant Garamond', Georgia, serif; color: #333; background: #fff; -webkit-font-smoothing: antialiased; }
-        header { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: #fff; display: flex; align-items: center; justify-content: space-between; padding: 18px 40px; border-bottom: 1px solid rgba(0,0,0,0.05); }
-        .nav-left { display: flex; gap: 30px; }
-        .nav-left a { text-decoration: none; color: #333; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-weight: 400; }
-        .nav-left a:hover { opacity: 0.6; }
-        .site-title { position: absolute; left: 50%; transform: translateX(-50%); font-size: 18px; letter-spacing: 6px; text-transform: uppercase; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-weight: 400; color: #333; }
-        .nav-right { display: flex; align-items: center; }
-        .hero { margin-top: 60px; width: 100%; overflow: hidden; }
-        .hero img { width: 100%; height: auto; display: block; object-fit: cover; max-height: 85vh; }
-        .vintage-jewels { max-width: 1200px; margin: 0 auto; padding: 80px 40px 60px; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
-        .vintage-jewels h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 52px; font-weight: 300; color: #1a1a1a; line-height: 1.1; }
-        .vintage-jewels p { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 20px; line-height: 1.7; color: #333; font-weight: 400; }
-        .products { max-width: 1200px; margin: 0 auto; padding: 40px 40px 80px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; align-items: center; }
-        .products img { width: 100%; height: auto; display: block; object-fit: contain; max-height: 450px; }
-        .press { max-width: 1200px; margin: 0 auto; padding: 80px 40px 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
-        .press h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 52px; font-weight: 300; color: #1a1a1a; line-height: 1.1; }
-        .press p { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 20px; line-height: 1.7; color: #333; text-align: center; font-weight: 400; }
-        .press-images { max-width: 1200px; margin: 0 auto; padding: 60px 40px 80px; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
-        .press-images figure { text-align: center; }
-        .press-images img { width: 100%; max-width: 400px; height: auto; display: block; margin: 0 auto; }
-        .press-images figcaption { margin-top: 16px; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 13px; letter-spacing: 1px; color: #555; }
-        .about { max-width: 1200px; margin: 0 auto; padding: 80px 40px 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
-        .about h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 52px; font-weight: 300; color: #1a1a1a; line-height: 1.1; }
-        .about p { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 20px; line-height: 1.7; color: #333; font-weight: 400; }
-        .about-portrait { max-width: 1200px; margin: 0 auto; padding: 40px 40px 80px; display: flex; justify-content: flex-end; }
-        .about-portrait img { width: 380px; height: auto; display: block; }
-        footer { padding: 60px 40px 40px; text-align: center; }
-        .social-icons { display: flex; justify-content: center; gap: 16px; margin-bottom: 30px; }
-        .social-icons a { display: inline-block; color: #333; transition: opacity 0.2s; }
-        .social-icons a:hover { opacity: 0.6; }
-        .social-icons svg { width: 24px; height: 24px; }
-        .footer-links { display: flex; justify-content: center; gap: 30px; }
-        .footer-links a { text-decoration: none; color: #555; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-weight: 400; }
-        .footer-links a:hover { opacity: 0.6; }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            color: #333;
+            background: #fff;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ââ HEADER / NAV ââ */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 18px 40px;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .nav-left {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-left a {
+            text-decoration: none;
+            color: #333;
+            font-size: 11px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-weight: 400;
+        }
+
+        .nav-left a:hover {
+            opacity: 0.6;
+        }
+
+        .site-title {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 18px;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-weight: 400;
+            color: #333;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .site-title a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+        }
+
+        /* ââ HERO ââ */
+        .hero {
+            margin-top: 60px;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .hero img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+            max-height: 85vh;
+        }
+
+        /* ââ VINTAGE JEWELS SECTION ââ */
+        .vintage-jewels {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 40px 60px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: start;
+        }
+
+        .vintage-jewels h2 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 52px;
+            font-weight: 300;
+            color: #1a1a1a;
+            line-height: 1.1;
+        }
+
+        .vintage-jewels p {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 20px;
+            line-height: 1.7;
+            color: #333;
+            font-weight: 400;
+        }
+
+        /* ââ PRODUCTS ROW ââ */
+        .products {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 40px 80px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            align-items: center;
+        }
+
+        .products img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: contain;
+            max-height: 450px;
+        }
+
+        /* ââ PRESS SECTION ââ */
+        .press {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 40px 40px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: start;
+        }
+
+        .press h2 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 52px;
+            font-weight: 300;
+            color: #1a1a1a;
+            line-height: 1.1;
+        }
+
+        .press p {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 20px;
+            line-height: 1.7;
+            color: #333;
+            text-align: center;
+            font-weight: 400;
+        }
+
+        /* ââ PRESS IMAGES ââ */
+        .press-images {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 40px 80px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: start;
+        }
+
+        .press-images figure {
+            text-align: center;
+        }
+
+        .press-images img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .press-images figcaption {
+            margin-top: 16px;
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 13px;
+            letter-spacing: 1px;
+            color: #555;
+        }
+
+        /* ââ ABOUT ME SECTION ââ */
+        .about {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 40px 40px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: start;
+        }
+
+        .about h2 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 52px;
+            font-weight: 300;
+            color: #1a1a1a;
+            line-height: 1.1;
+        }
+
+        .about p {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 20px;
+            line-height: 1.7;
+            color: #333;
+            font-weight: 400;
+        }
+
+        /* ââ ABOUT PORTRAIT ââ */
+        .about-portrait {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 40px 80px;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .about-portrait img {
+            width: 380px;
+            height: auto;
+            display: block;
+        }
+
+        /* ââ FOOTER ââ */
+        footer {
+            padding: 60px 40px 40px;
+            text-align: center;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-bottom: 30px;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            color: #333;
+            transition: opacity 0.2s;
+        }
+
+        .social-icons a:hover {
+            opacity: 0.6;
+        }
+
+        .social-icons svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .footer-links a {
+            text-decoration: none;
+            color: #555;
+            font-size: 11px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-weight: 400;
+        }
+
+        .footer-links a:hover {
+            opacity: 0.6;
+        }
+
+        /* ââ RESPONSIVE ââ */
         @media (max-width: 768px) {
-            header { padding: 14px 20px; }
-            .site-title { font-size: 14px; letter-spacing: 4px; }
-            .nav-left a { font-size: 10px; letter-spacing: 2px; }
-            .vintage-jewels, .press, .about { grid-template-columns: 1fr; padding: 50px 24px 30px; gap: 30px; }
-            .vintage-jewels h2, .press h2, .about h2 { font-size: 38px; }
-            .vintage-jewels p, .press p, .about p { font-size: 18px; }
-            .products { grid-template-columns: 1fr; padding: 20px 24px 50px; gap: 40px; }
-            .products img { max-width: 300px; margin: 0 auto; }
-            .press-images { grid-template-columns: 1fr; padding: 30px 24px 50px; }
-            .about-portrait { justify-content: center; padding: 20px 24px 50px; }
-            .about-portrait img { width: 280px; }
-            .footer-links { flex-direction: column; gap: 15px; }
+            header {
+                padding: 14px 20px;
+            }
+
+            .site-title {
+                font-size: 14px;
+                letter-spacing: 4px;
+            }
+
+            .nav-left a {
+                font-size: 10px;
+                letter-spacing: 2px;
+            }
+
+            .vintage-jewels,
+            .press,
+            .about {
+                grid-template-columns: 1fr;
+                padding: 50px 24px 30px;
+                gap: 30px;
+            }
+
+            .vintage-jewels h2,
+            .press h2,
+            .about h2 {
+                font-size: 38px;
+            }
+
+            .vintage-jewels p,
+            .press p,
+            .about p {
+                font-size: 18px;
+            }
+
+            .products {
+                grid-template-columns: 1fr;
+                padding: 20px 24px 50px;
+                gap: 40px;
+            }
+
+            .products img {
+                max-width: 300px;
+                margin: 0 auto;
+            }
+
+            .press-images {
+                grid-template-columns: 1fr;
+                padding: 30px 24px 50px;
+            }
+
+            .about-portrait {
+                justify-content: center;
+                padding: 20px 24px 50px;
+            }
+
+            .about-portrait img {
+                width: 280px;
+            }
+
+            .footer-links {
+                flex-direction: column;
+                gap: 15px;
+            }
         }
     </style>
 </head>
 <body>
+
+    <!-- HEADER -->
     <header>
-        <nav class="nav-left"><a href="#home">Home</a></nav>
-        <div class="site-title">Louise Ferdinando</div>
+        <nav class="nav-left">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+        </nav>
+        <div class="site-title"><a href="index.html">Louise Ferdinando</a></div>
         <div class="nav-right"></div>
     </header>
+
+    <!-- HERO IMAGE -->
     <section class="hero" id="home">
         <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1532969618470-K25H6MC0PREV8J5R85EQ/1.jpg?format=2500w" alt="Louise Ferdinando - Vintage Jewels">
     </section>
+
+    <!-- VINTAGE JEWELS -->
     <section class="vintage-jewels">
         <h2>Vintage Jewels</h2>
         <p>My goal is to infuse modern clothes with a quirky twist rendered by wearing them with vintage accessories. Some pieces you will find here are actually antique and can lend themselves to home interiors as well as wearing. Some will just speak to you and you will want to wear them with everything. Yet others seem impossibly glamorous and because of their gentle patina, can be worn in a casual manner. One thing they all do is strengthen your look, adding individuality in an increasingly homogeneous world.</p>
     </section>
+
+    <!-- PRODUCT SHOWCASE -->
     <section class="products">
         <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1532972331994-3JGGHU4BVD8HN7M66RDH/3058713_master.jpg?format=1000w" alt="Vintage Crystal Brooch">
         <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1532972388015-R5DK2UMSFATI1PS5V88F/2479823_l.jpg?format=1000w" alt="Vintage Daisy Crown">
         <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1532972398092-74J26H4YU86294TNBOTN/2479553_l-1.jpg?format=1000w" alt="Vintage Pearl Pendant">
     </section>
+
+    <!-- PRESS -->
     <section class="press">
         <h2>Press</h2>
-        <p>My jewellery has been featured in magazines such as Dazed and Confused, Metal Magazine &amp; Mr Porter, along with films such as An Education, The Man From Uncle &amp; The boat that rocked. Follow my Instagram for stills and inspiration!</p>
+        <p>My jewellery has been featured in magazines such as Dazed and Confused, Metal Magazine &amp; Mr Porter, along with films such as An Education, The Man From Uncle &amp; THE BOAT THAT ROCKED. Follow my Instagram for stills and inspiration!</p>
     </section>
+
+    <!-- PRESS IMAGES -->
     <section class="press-images">
         <figure>
-            <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1532972579995-JOCAXVN9MHWZWHM5WO44/afc40c8686bc3cf425c87b20d29b6340.jpg?format=750w" alt="Dazed and Confused Magazine">
+            <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1532972579995-JOCAXVN9MHWZWHM5WO44/afc40c8686bc3cf425c87b20d29b6340.jpg?format=750w" alt="Dazed & Confused Magazine - Spring/Summer 2017">
             <figcaption>Dazed &amp; Confused Magazine - Spring/Summer 2017</figcaption>
         </figure>
         <figure>
-            <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1532972941288-FS9N9QY1H5LM57XREV39/EstherBellepoque_metalmagazine_2_.jpg?format=750w" alt="Metal Magazine - Chambre Noir">
+            <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1532972941288-FS9N9QY1H5LM57XREV39/EstherBellepoque_metalmagazine_2_.jpg?format=750w" alt="Metal Magazine - Chambre Noir - November 2017">
             <figcaption>Metal Magazine - Chambre Noir - November 2017</figcaption>
         </figure>
     </section>
+
+    <!-- ABOUT ME -->
     <section class="about">
         <h2>About Me</h2>
-        <p>Using my background in luxury retail (Butler and Wilson and Valentino) and prop houses, I have over many years built up a vast collection of fashion accessories and jewellery which I have made available to costume designers, stylists and finally began selling to the public 18 years ago. Please contact me for information on current stock for hire or sale.</p>
+        <p>Using my background in luxury retail (Butler and Wilson and Valentino) and prop houses, I have over many years built up a vast collection of fashion accessories and jewellery which I have made available to costume designers, stylists and finally began selling to the public 20 years ago. Please contact me for information on current stock for hire or sale.</p>
     </section>
+
+    <!-- PORTRAIT -->
     <section class="about-portrait">
         <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1535974139925-WVG5A7668SGUJLBYX6YO/Unknown.jpeg" alt="Louise Ferdinando Portrait">
     </section>
+
+    <!-- FOOTER -->
     <footer>
         <div class="social-icons">
             <a href="https://www.instagram.com/louiseferdinando/" target="_blank" rel="noopener" aria-label="Instagram">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                    <circle cx="12" cy="12" r="5"/>
+                    <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+                </svg>
             </a>
             <a href="https://www.facebook.com/louiseferdinandojewels/" target="_blank" rel="noopener" aria-label="Facebook">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                </svg>
             </a>
         </div>
         <div class="footer-links">
-            <a href="mailto:info@louiseferdinando.com">Shipping</a>
-            <a href="mailto:info@louiseferdinando.com">Returns Policy</a>
             <a href="mailto:info@louiseferdinando.com">Contact</a>
         </div>
     </footer>
+
 </body>
 </html>
