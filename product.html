@@ -1,1 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Louise Ferdinando</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap');
 
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            color: #333;
+            background: #fff;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ââ HEADER ââ */
+        header {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 100;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 18px 40px;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .nav-left {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-left a {
+            text-decoration: none;
+            color: #333;
+            font-size: 11px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-weight: 400;
+        }
+
+        .nav-left a:hover { opacity: 0.6; }
+
+        .site-title {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 18px;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-weight: 400;
+            color: #333;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        .site-title a { color: #333; text-decoration: none; }
+        .nav-right { display: flex; align-items: center; }
+
+        /* ââ MAIN ââ */
+        main {
+            margin-top: 60px;
+            max-width: 1100px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 60px 40px 100px;
+        }
+
+        /* ââ BACK LINK ââ */
+        .back-link {
+            display: inline-block;
+            margin-bottom: 50px;
+            text-decoration: none;
+            color: #999;
+            font-size: 11px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            transition: color 0.2s;
+        }
+        .back-link:hover { color: #333; }
+        .back-link::before { content: 'â '; }
+
+        /* ââ PRODUCT LAYOUT ââ */
+        .product-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: start;
+        }
+
+        /* ââ IMAGE GALLERY ââ */
+        .gallery {
+            position: sticky;
+            top: 90px;
+        }
+
+        .main-image-wrap {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            background: #f9f9f9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            margin-bottom: 12px;
+            cursor: zoom-in;
+        }
+
+        .main-image-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            padding: 30px;
+            transition: transform 0.3s ease;
+        }
+
+        .main-image-wrap:hover img { transform: scale(1.04); }
+
+        .thumb-row {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .thumb {
+            width: 70px;
+            height: 70px;
+            background: #f9f9f9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: border-color 0.2s;
+            overflow: hidden;
+        }
+
+        .thumb.active { border-color: #333; }
+        .thumb:hover { border-color: #999; }
+
+        .thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            padding: 6px;
+        }
+
+        /* ââ LIGHTBOX ââ */
+        .lightbox {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.88);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+            cursor: zoom-out;
+        }
+        .lightbox.open { display: flex; }
+        .lightbox img {
+            max-width: 90vw;
+            max-height: 90vh;
+            object-fit: contain;
+        }
+        .lightbox-close {
+            position: fixed;
+            top: 24px; right: 32px;
+            color: #fff;
+            font-size: 36px;
+            cursor: pointer;
+            line-height: 1;
+            opacity: 0.7;
+        }
+        .lightbox-close:hover { opacity: 1; }
+
+        /* ââ PRODUCT INFO ââ */
+        .product-info {
+            padding-top: 10px;
+        }
+
+        .sold-badge {
+            display: inline-block;
+            font-size: 10px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #999;
+            border: 1px solid #ddd;
+            padding: 4px 12px;
+            margin-bottom: 20px;
+        }
+
+        .product-info h1 {
+            font-size: 32px;
+            font-weight: 300;
+            line-height: 1.2;
+            color: #1a1a1a;
+            margin-bottom: 24px;
+            letter-spacing: 0.5px;
+        }
+
+        .product-price {
+            font-size: 22px;
+            font-weight: 400;
+            color: #333;
+            margin-bottom: 36px;
+            letter-spacing: 1px;
+        }
+
+        .product-description {
+            font-size: 17px;
+            line-height: 1.8;
+            color: #555;
+            font-weight: 300;
+            margin-bottom: 48px;
+        }
+
+        .enquire-btn {
+            display: inline-block;
+            padding: 16px 48px;
+            background: #333;
+            color: #fff;
+            text-decoration: none;
+            font-size: 11px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-weight: 400;
+            transition: background 0.2s, opacity 0.2s;
+        }
+        .enquire-btn:hover { background: #555; }
+        .enquire-btn.sold-btn {
+            background: #ccc;
+            cursor: default;
+            pointer-events: none;
+        }
+
+        .enquire-note {
+            margin-top: 14px;
+            font-size: 13px;
+            color: #999;
+            font-style: italic;
+        }
+
+        /* ââ NOT FOUND ââ */
+        .not-found {
+            text-align: center;
+            padding: 120px 40px;
+        }
+        .not-found h1 {
+            font-size: 28px;
+            font-weight: 300;
+            color: #999;
+            margin-bottom: 20px;
+        }
+        .not-found a {
+            color: #333;
+            font-size: 12px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        /* ââ FOOTER ââ */
+        footer {
+            padding: 60px 40px 40px;
+            text-align: center;
+            border-top: 1px solid rgba(0,0,0,0.05);
+            margin-top: 80px;
+        }
+        .social-icons {
+            display: flex; justify-content: center; gap: 16px; margin-bottom: 30px;
+        }
+        .social-icons a { display: inline-block; color: #333; transition: opacity 0.2s; }
+        .social-icons a:hover { opacity: 0.6; }
+        .social-icons svg { width: 24px; height: 24px; }
+        .footer-links { display: flex; justify-content: center; gap: 30px; }
+        .footer-links a {
+            text-decoration: none; color: #555; font-size: 11px;
+            letter-spacing: 3px; text-transform: uppercase;
+            font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 400;
+        }
+        .footer-links a:hover { opacity: 0.6; }
+
+        /* ââ RESPONSIVE ââ */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                padding: 12px 20px;
+                gap: 8px;
+            }
+            .site-title {
+                position: static;
+                transform: none;
+                font-size: 15px;
+                letter-spacing: 4px;
+                order: -1;
+            }
+            .nav-left { justify-content: center; gap: 24px; }
+            .nav-right { display: none; }
+            main {
+                margin-top: 90px;
+                padding: 30px 20px 80px;
+            }
+            .product-layout {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            .gallery { position: static; }
+            .product-info h1 { font-size: 26px; }
+            .thumb { width: 56px; height: 56px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav-left">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+        </nav>
+        <div class="site-title"><a href="index.html">Louise Ferdinando</a></div>
+        <div class="nav-right"></div>
+    </header>
+
+    <main id="main-content">
+        <div class="not-found" id="not-found" style="display:none">
+            <h1>Item not found</h1>
+            <a href="shop.html">â Back to shop</a>
+        </div>
+    </main>
+
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <span class="lightbox-close" onclick="closeLightbox()">Ã</span>
+        <img id="lightbox-img" src="" alt="">
+    </div>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/louiseferdinando/" target="_blank" rel="noopener" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                    <circle cx="12" cy="12" r="5"/>
+                    <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+                </svg>
+            </a>
+            <a href="https://www.facebook.com/louiseferdinandojewels/" target="_blank" rel="noopener" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                </svg>
+            </a>
+        </div>
+        <div class="footer-links">
+            <a href="mailto:info@louiseferdinando.com">Contact</a>
+        </div>
+    </footer>
+
+    <script src="product-data.js"></script>
+    <script>
+    (function() {
+        var params = new URLSearchParams(window.location.search);
+        var id = params.get('id') || '';
+        var product = window.PRODUCT_DATA && window.PRODUCT_DATA[id];
+
+        if (!product) {
+            document.getElementById('not-found').style.display = 'block';
+            document.title = 'Item Not Found â Louise Ferdinando';
+            return;
+        }
+
+        document.title = product.title + ' â Louise Ferdinando';
+
+        var sold = product.sold;
+        var images = product.images && product.images.length ? product.images : [];
+        var enquirySubject = encodeURIComponent('Enquiry about: ' + product.title);
+        var mailtoHref = 'mailto:info@louiseferdinando.com?subject=' + enquirySubject;
+
+        var soldBadgeHtml = sold
+            ? '<div class="sold-badge">Sold</div>'
+            : '';
+
+        var priceHtml = product.price
+            ? '<div class="product-price">' + product.price + '</div>'
+            : '';
+
+        var enquireHtml = sold
+            ? '<a class="enquire-btn sold-btn" href="#">Sold</a>'
+            : '<a class="enquire-btn" href="' + mailtoHref + '">Enquire</a><p class="enquire-note">Email us about this piece</p>';
+
+        var mainImgSrc = images.length ? images[0] : '';
+        var thumbsHtml = '';
+        if (images.length > 1) {
+            images.forEach(function(img, i) {
+                thumbsHtml += '<div class="thumb' + (i===0?' active':'') + '" onclick="switchImage(this, \'' + img.replace(/'/g,"&apos;") + '\')" data-src="' + img.replace(/"/g,'&quot;') + '"><img src="' + img + '" alt=""></div>';
+            });
+        }
+
+        var html = [
+            '<a class="back-link" href="shop.html">Back to shop</a>',
+            '<div class="product-layout">',
+              '<div class="gallery">',
+                '<div class="main-image-wrap" onclick="openLightbox(\'' + mainImgSrc.replace(/'/g,"&apos;") + '\')">',
+                  '<img id="main-img" src="' + mainImgSrc + '" alt="' + product.title.replace(/"/g,'&quot;') + '">',
+                '</div>',
+                thumbsHtml ? '<div class="thumb-row">' + thumbsHtml + '</div>' : '',
+              '</div>',
+              '<div class="product-info">',
+                soldBadgeHtml,
+                '<h1>' + product.title + '</h1>',
+                priceHtml,
+                '<div class="product-description">' + product.description + '</div>',
+                enquireHtml,
+              '</div>',
+            '</div>'
+        ].join('');
+
+        document.getElementById('main-content').innerHTML = html;
+    })();
+
+    function switchImage(thumb, src) {
+        document.getElementById('main-img').src = src;
+        document.querySelectorAll('.thumb').forEach(function(t){ t.classList.remove('active'); });
+        thumb.classList.add('active');
+        // update lightbox target
+        thumb.closest('.gallery').querySelector('.main-image-wrap').setAttribute('onclick', "openLightbox('" + src.replace(/'/g,"&apos;") + "')");
+    }
+
+    function openLightbox(src) {
+        document.getElementById('lightbox-img').src = src.replace('format=500w','format=1500w');
+        document.getElementById('lightbox').classList.add('open');
+    }
+
+    function closeLightbox() {
+        document.getElementById('lightbox').classList.remove('open');
+    }
+
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeLightbox();
+    });
+    </script>
+</body>
+</html>
