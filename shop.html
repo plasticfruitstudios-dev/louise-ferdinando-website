@@ -120,7 +120,7 @@
             aspect-ratio: 1 / 1;
             overflow: hidden;
             margin-bottom: 20px;
-            background: #f9f9f9;
+            background: transparent;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -192,13 +192,18 @@
             opacity: 0.65;
         }
 
+        .sold-card a {
+            text-decoration: none;
+            color: inherit;
+        }
+
         .sold-image-container {
             position: relative;
             width: 100%;
             aspect-ratio: 1 / 1;
             overflow: hidden;
             margin-bottom: 20px;
-            background: #f5f5f5;
+            background: transparent;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -240,7 +245,7 @@
 
         .social-icons {
             display: flex;
-                  justify-content: center;
+            justify-content: center;
             gap: 16px;
             margin-bottom: 30px;
         }
@@ -283,13 +288,20 @@
         /* ââ RESPONSIVE ââ */
         @media (max-width: 768px) {
             header {
-                padding: 14px 20px;
+                flex-direction: column;
+                padding: 12px 20px;
+                gap: 6px;
             }
 
             .site-title {
+                position: static;
+                transform: none;
                 font-size: 14px;
                 letter-spacing: 4px;
+                order: -1;
             }
+
+            .nav-left { justify-content: center; }
 
             .nav-left a {
                 font-size: 10px;
@@ -351,7 +363,7 @@
             <h2>Necklaces</h2>
             <div class="product-grid">
                 <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Striking%20French%201920s%20Galalith%20and%20glass%20flapper%20necklace">
+                    <a href="product.html?id=striking-french-1920s-galalith-and-glass-flapper-necklace">
                         <div class="product-image-container">
                             <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1499766488263-3LZXDN2AV9VPR9CU47Z3/2150923_l.jpg?format=500w" alt="Striking French 1920s Galalith and glass flapper necklace">
                         </div>
@@ -359,7 +371,7 @@
                     </a>
                 </div>
                 <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Mexican%20hand%20made%20sterling%20silver%20necklace%2C%20with%20graduated%20balls">
+                    <a href="product.html?id=mexican-hand-made-sterling-silver-necklace-with-graduated-balls">
                         <div class="product-image-container">
                             <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1499768348111-0Y2U8EEFN9GN6O0QINMM/2150803_l.jpg?format=500w" alt="Mexican hand made sterling silver necklace, with graduated balls">
                         </div>
@@ -367,7 +379,7 @@
                     </a>
                 </div>
                 <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%201950s%20Showgirl%20necklace%2E%20Wonderful%2C%20original%20and%20huge%2E">
+                    <a href="product.html?id=1950s-showgirl-necklace-wonderful-original-and-huge">
                         <div class="product-image-container">
                             <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1499774174898-QITOKHRNM60GQ4Q0XI51/1978863_l.jpg?format=500w" alt="1950s Showgirl necklace. Wonderful, original and huge.">
                         </div>
@@ -375,15 +387,15 @@
                     </a>
                 </div>
                 <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Boho%20handmade%20brass%20and%20malachite%20necklace%2C%201960s">
+                    <a href="product.html?id=boho-handmade-brass-and-malachite-necklace-1960s">
                         <div class="product-image-container">
                             <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1499777464628-W15O9ENQW5HETDLIWP7Y/2830423_l.jpg?format=500w" alt="Boho handmade brass and malachite necklace, 1960s">
                         </div>
-                        <div class="product-title">Boho handmade brass and malachite necklace, 1960s</div>
+      2                 <div class="product-title">Boho handmade brass and malachite necklace, 1960s</div>
                     </a>
                 </div>
                 <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Lovely%201950s%20glass%20and%20seed%20pearl%20necklace%2Cin%20the%20manner%20of%20Miriam%20Haskell">
+                    <a href="product.html?id=lovely-1950s-glass-and-seed-pearl-necklacein-the-manner-of-miriam-haskell">
                         <div class="product-image-container">
                             <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1499779159820-CN9BGV5RVCZ6T8HDW17Q/2479893_l.jpg?format=500w" alt="Lovely 1950s glass and seed pearl necklace,in the manner of Miriam Haskell">
                         </div>
@@ -391,7 +403,7 @@
                     </a>
                 </div>
                 <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%201920s%20art%20glass%20beaded%20necklace%20with%20crystal%20spacers%20and%20frosted%20crystal%20rings">
+                    <a href="product.html?id=1920s-art-glass-beaded-necklace-with-crystal-spacers-and-frosted-crystal-rings">
                         <div class="product-image-container">
                             <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1499780206282-HINTOMU0QSFXE62GGBY4/2479863_l.jpg?format=500w" alt="1920s art glass beaded necklace with crystal spacers and frosted crystal rings">
                         </div>
@@ -399,7 +411,7 @@
                     </a>
                 </div>
                 <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Simple%20and%20striking%20sterling%20silver%20and%20copper%20Mexican%20collar%2C%201950s%2E">
+                    <a href="product.html?id=simple-and-striking-sterling-silver-and-copper-mexican-collar-1950s">
                         <div class="product-image-container">
                             <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1499780388496-9WWZA6GQK4UX4C5P6SY2/2479923_l.jpg?format=500w" alt="Simple and striking sterling silver and copper Mexican collar, 1950s.">
                         </div>
@@ -407,7 +419,7 @@
                     </a>
                 </div>
                 <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Joyous%20%27double%20dove%27%20necklace%2C%20Cadoro%2C%201970s">
+                    <a href="product.html?id=joyous-double-dove-necklace-cadoro-1970s">
                         <div class="product-image-container">
                             <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1520254774993-XXG9ZJT9RUIKRJVJ6UGZ/3136503_master.jpg?format=500w" alt="Joyous 'double dove' necklace, Cadoro, 1970s">
                         </div>
@@ -415,7 +427,7 @@
                     </a>
                 </div>
                 <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Lovely%20sterling%20silver%20and%20cut%20crystal%20pendant%2C%201920s">
+                    <a href="product.html?id=lovely-sterling-silver-and-cut-crystal-pendant-1920s">
                         <div class="product-image-container">
                             <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1520255997411-85BDKP6UBE3GZWGBPQTF/3136303_master.jpg?format=500w" alt="Lovely sterling silver and cut crystal pendant, 1920s">
                         </div>
@@ -423,7 +435,7 @@
                     </a>
                 </div>
                 <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Pate%20de%20verre%20enamel%20%27Boho%27%20necklace%2C%20Andree%20Bazot%2C%201960s">
+                    <a href="product.html?id=pate-de-verre-enamel-boho-necklace-andree-bazot-1960s">
                         <div class="product-image-container">
                             <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1520261017551-GR31ZJHC43OU54PO59KE/3136133_master.jpg?format=500w" alt="Pate de verre enamel 'Boho' necklace, Andree Bazot, 1960s">
                         </div>
@@ -431,7 +443,7 @@
                     </a>
                 </div>
                 <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Really%20exceptional%20micro%20glass%20bead%20flapper%20necklace%2C%201920s">
+                    <a href="product.html?id=really-exceptional-micro-glass-bead-flapper-necklace-1920s">
                         <div class="product-image-container">
                             <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1520266797295-K5XV4A5OV7UPZ1CGUS2V/3058903_master.jpg?format=500w" alt="Really exceptional micro glass bead flapper necklace, 1920s">
                         </div>
@@ -439,7 +451,7 @@
                     </a>
                 </div>
                 <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Highly%20unusual%20agate%20and%20silver%20necklace%20or%20belt%2C%201970s%20%2E">
+                    <a href="product.html?id=highly-unusual-agate-and-silver-necklace-or-belt-1970s">
                         <div class="product-image-container">
                             <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1520268792904-R1WF8J8YGQ590OBP9R3/3058843_master.jpg?format=500w" alt="Highly unusual agate and silver necklace or belt, 1970s .">
                         </div>
@@ -447,7 +459,7 @@
                     </a>
                 </div>
                 <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Delightful%20Edwardian%20filigree%20and%20glass%20pearl%20necklace%2C%20French%2C%20c1910%2E">
+                    <a href="product.html?id=delightful-edwardian-filigree-and-glass-pearl-necklace-french-c1910">
                         <div class="product-image-container">
                             <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1520269020533-IKUEJNTRX56G8Q31EODT/3058823_master.jpg?format=500w" alt="Delightful Edwardian filigree and glass pearl necklace, French, c1910.">
                         </div>
@@ -455,7 +467,7 @@
                     </a>
                 </div>
                 <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Sinuous%20onyx%20and%20turquoise%20%27snake%27%20necklace">
+                    <a href="product.html?id=sinuous-onyx-and-turquoise-snake-necklace">
                         <div class="product-image-container">
                             <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1520508050551-DXL1LA470IQ12ORA7YP1/2150973_l.jpg?format=500w" alt="Sinuous onyx and turquoise 'snake' necklace">
                         </div>
@@ -463,7 +475,7 @@
                     </a>
                 </div>
                 <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Jose%20Maria%20Puig%20Doria%20large%20sterling%20silver%20pendant%20necklace%2C%201960s">
+                    <a href="product.html?id=jose-maria-puig-doria-large-sterling-silver-pendant-necklace-1960s">
                         <div class="product-image-container">
                             <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1520510107676-7YGX29HO3FPPTEX6979C/1978813_l.jpg?format=500w" alt="Jose Maria Puig Doria large sterling silver pendant necklace, 1960s">
                         </div>
@@ -471,7 +483,7 @@
                     </a>
                 </div>
                 <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Handsome%20and%20sophisticated%20rhinestone%20collar%2C%201950s">
+                    <a href="product.html?id=handsome-and-sophisticated-rhinestone-collar-1950s">
                         <div class="product-image-container">
                             <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1520510274199-1EESYNATNE9KXX9KLRTA/1978763_l.jpg?format=500w" alt="Handsome and sophisticated rhinestone collar, 1950s">
                         </div>
@@ -479,7 +491,7 @@
                     </a>
                 </div>
                 <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Sterling%20silver%20flapper%20necklace%20of%20glass%2C%20rhinestone%20and%20enamel%2C%201920s">
+                    <a href="product.html?id=sterling-silver-flapper-necklace-of-glass-rhinestone-and-enamel-1920s">
                         <div class="product-image-container">
                             <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1520510534550-2N69Z8XKXR7PBWDO214Y/1978743_l.jpg?format=500w" alt="Sterling silver flapper necklace of glass, rhinestone and enamel, 1920s">
                         </div>
@@ -487,7 +499,7 @@
                     </a>
                 </div>
                 <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Unsigned%20Swoboda%201960s%20jade%2C%20peridot%20and%2024k%20gilt%20organic%20necklace%2E">
+                    <a href="product.html?id=unsigned-swoboda-1960s-jade-peridot-and-24k-gilt-organic-necklace">
                         <div class="product-image-container">
                             <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1520510682183-EM3ADMGPKWL6N9Q3GDT0/1715093_l.jpg?format=500w" alt="Unsigned Swoboda 1960s jade, peridot and 24k gilt organic necklace.">
                         </div>
@@ -495,7 +507,7 @@
                     </a>
                 </div>
                 <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Valentino%20lucite%20and%20rhinestone%20sautoir%201980s">
+                    <a href="product.html?id=valentino-lucite-and-rhinestone-sautoir-1980s">
                         <div class="product-image-container">
                             <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1520510982653-2N69Z8XKXR7PBWDO214Y/1715083_l.jpg?format=500w" alt="Valentino lucite and rhinestone sautoir 1980s">
                         </div>
@@ -503,7 +515,7 @@
                     </a>
                 </div>
                 <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Valentino%201980s%20Murano%20glass%20multistrand%20massive%20bib%20necklace">
+                    <a href="product.html?id=valentino-1980s-murano-glass-multistrand-massive-bib-necklace">
                         <div class="product-image-container">
                             <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1520512591605-9TYRXR1SDE18XD5IZRQ7/1400693_l.jpg?format=500w" alt="Valentino 1980s Murano glass multistrand massive bib necklace">
                         </div>
@@ -511,7 +523,7 @@
                     </a>
                 </div>
                 <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Joseff%20of%20Hollywood%20Russian%20gilt%20and%20paste%20multi%20drop%20necklace%2C%201950s">
+                    <a href="product.html?id=joseff-of-hollywood-russian-gilt-and-paste-multi-drop-necklace-1950s">
                         <div class="product-image-container">
                             <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1520512840311-39CK5PW7QSRV799M4WM7/1400703_l.jpg?format=500w" alt="Joseff of Hollywood Russian gilt and paste multi drop necklace, 1950s">
                         </div>
@@ -519,7 +531,7 @@
                     </a>
                 </div>
                 <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Spectacular%20Russian%20Gilt%20Multichain%20tassle%20superlong%20necklace%2E">
+                    <a href="product.html?id=spectacular-russian-gilt-multichain-tassle-superlong-necklace">
                         <div class="product-image-container">
                             <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1520513231565-LOP4TRBDADZCPN14VV88/1400593_l.jpg?format=500w" alt="Spectacular Russian Gilt Multichain tassle superlong necklace.">
                         </div>
@@ -527,7 +539,7 @@
                     </a>
                 </div>
                 <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Coppola%20e%20Toppo%20flamboyant%20half%20crystal%20and%20lucite%20choker%201960s%2E">
+                    <a href="product.html?id=coppola-e-toppo-flamboyant-half-crystal-and-lucite-choker-1960s">
                         <div class="product-image-container">
                             <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1520515406017-084F7HU1938RMXEI6OLB/927693_l.jpg?format=500w" alt="Coppola e Toppo flamboyant half crystal and lucite choker 1960s.">
                         </div>
@@ -535,7 +547,7 @@
                     </a>
                 </div>
                 <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Coppola%20e%20Toppo%20for%20Christian%20Dior%20half%20crystal%20waterfall%20necklace%201950s">
+                    <a href="product.html?id=coppola-e-toppo-for-christian-dior-half-crystal-waterfall-necklace-1950s">
                         <div class="product-image-container">
                             <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1520515160923-52OTPGK2MV945XHJNNC4/927783_l.jpg?format=500w" alt="Coppola e Toppo for Christian Dior half crystal waterfall necklace 1950s">
                         </div>
@@ -543,7 +555,7 @@
                     </a>
                 </div>
                 <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Carved%20onyx%20and%20citrine%20beaded%20necklace%20with%20silver%20gilt%20clasp%20and%20beads%2C%201980s">
+                    <a href="product.html?id=carved-onyx-and-citrine-beaded-necklace-with-silver-gilt-clasp-and-beads-1980s">
                         <div class="product-image-container">
                             <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1535995162872-I8WW1D0L1WW1UROFO89D/image.png?format=500w" alt="Carved onyx and citrine beaded necklace with silver gilt clasp and beads, 1980s">
                         </div>
@@ -551,7 +563,7 @@
                     </a>
                 </div>
                 <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Miriam%20Haskell%20-%20Faux%20Coral%20choker%20necklace">
+                    <a href="product.html?id=miriam-haskell-faux-coral-choker-necklace">
                         <div class="product-image-container">
                             <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1570203769309-NHPGULSLYX3BGQD6WKS0/Website+Stock3.jpg?format=500w" alt="Miriam Haskell - Faux Coral choker necklace">
                         </div>
@@ -559,7 +571,7 @@
                     </a>
                 </div>
                 <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Handmade%20lucite%20two%20sided%20ball%20necklace%20%2C%20c1970s">
+                    <a href="product.html?id=handmade-lucite-two-sided-ball-necklace-c1970s">
                         <div class="product-image-container">
                             <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1535999473605-OZT5UV0V6VWWKIWTCPZU/image.png?format=500w" alt="Handmade lucite two sided ball necklace , c1970s">
                         </div>
@@ -567,7 +579,7 @@
                     </a>
                 </div>
                 <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Brass%20tassle%20pendant%20on%20a%20circular%20box%20construction%20brass%20chain%2C%201940s">
+                    <a href="product.html?id=brass-tassle-pendant-on-a-circular-box-construction-brass-chain-1940s">
                         <div class="product-image-container">
                             <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1535999983629-W57AG18ZXLTUOCWFKDAZ/image.png?format=500w" alt="Brass tassle pendant on a circular box construction brass chain, 1940s">
                         </div>
@@ -575,7 +587,7 @@
                     </a>
                 </div>
                 <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Sterling%20Silver%20hand%20made%20modernist%20cube%20and%20chain%20necklace%2C%20circa%201970s">
+                    <a href="product.html?id=sterling-silver-hand-made-modernist-cube-and-chain-necklace-circa-1970s">
                         <div class="product-image-container">
                             <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1536000799091-XPA7E08TE0UUASDRDI5X/image.png?format=500w" alt="Sterling Silver hand made modernist cube and chain necklace, circa 1970s">
                         </div>
@@ -583,7 +595,7 @@
                     </a>
                 </div>
                 <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%2019th%20Century%20French%20jet%20pendant%2C%20in%20perfect%20condition%2E">
+                    <a href="product.html?id=19th-century-french-jet-pendant-in-perfect-condition">
                         <div class="product-image-container">
                             <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1536001154809-OFTFQJZMJA6BDAOLPMP9/image.png?format=500w" alt="19th Century French jet pendant, in perfect condition.">
                         </div>
@@ -591,7 +603,7 @@
                     </a>
                 </div>
                 <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Art%20Deco%20cranberry%20glass%20and%20pearl%20sautoir%2C%20with%20unmarked%20silver%20links%2E">
+                    <a href="product.html?id=art-deco-cranberry-glass-and-pearl-sautoir-with-unmarked-silver-links">
                         <div class="product-image-container">
                             <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1536001373927-8033H2I9LBLZSHMGOTCW/image.png?format=500w" alt="Art Deco cranberry glass and pearl sautoir, with unmarked silver links.">
                         </div>
@@ -599,7 +611,7 @@
                     </a>
                 </div>
                 <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Sterling%20silver%20%27plane%20propeller%27%20pendant%2C%20late%2020th%20Century">
+                    <a href="product.html?id=sterling-silver-plane-propeller-pendant-late-20th-century">
                         <div class="product-image-container">
                             <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1536001513654-CW3PG9KW8VL9UV5J6IGB/image.png?format=500w" alt="Sterling silver 'plane propeller' pendant, late 20th Century">
                         </div>
@@ -607,7 +619,7 @@
                     </a>
                 </div>
                 <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Striking%20hand%20made%20artisan%20%27crumpled%27%20metal%20collar">
+                    <a href="product.html?id=striking-hand-made-artisan-crumpled-metal-collar">
                         <div class="product-image-container">
                             <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1536155695190-9S67SPZBEXJJKHSJVZ93/3407453_master.jpg?format=500w" alt="Striking hand made artisan 'crumpled' metal collar">
                         </div>
@@ -622,7 +634,7 @@
             <h2>Earrings</h2>
             <div class="product-grid">
                 <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Les%20Bernard%20paste%20and%20red%20glass%20square%20earrings%2C%201980s">
+                    <a href="product.html?id=les-bernard-paste-and-red-glass-square-earrings-1980s">
                         <div class="product-image-container">
                             <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1499779978042-P7LI1W4N8S6SMCS7PIGG/2479843_l.jpg?format=500w" alt="Les Bernard paste and red glass square earrings, 1980s">
                         </div>
@@ -630,7 +642,7 @@
                     </a>
                 </div>
                 <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Space%20age%20drop%20earrings%20by%20Marino%2C%201960s%20USA">
+                    <a href="product.html?id=space-age-drop-earrings-by-marino-1960s-usa">
                         <div class="product-image-container">
                             <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1519660545052-36G1BDQFFOOXM7E6VMMC/3514023_master.jpg?format=500w" alt="Space age drop earrings by Marino, 1960s USA">
                         </div>
@@ -638,7 +650,7 @@
                     </a>
                 </div>
                 <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Blue%20glass%20cabochon%20and%20rusticated%20gilt%20earrings%2C%20Claire%20Deve%2C%201980s">
+                    <a href="product.html?id=blue-glass-cabochon-and-rusticated-gilt-earrings-claire-deve-1980s">
                         <div class="product-image-container">
                             <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1519661800545-62TNMG8V3S40LE151EA8/3513993_master.jpg?format=500w" alt="Blue glass cabochon and rusticated gilt earrings, Claire Deve, 1980s">
                         </div>
@@ -646,7 +658,7 @@
                     </a>
                 </div>
                 <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Silvertone%20and%20clear%20paste%20earrings%2C%20Clare%20Deve%20%28Paris%29%20for%20Montana%2C%201980s">
+                    <a href="product.html?id=silvertone-and-clear-paste-earrings-clare-deve-paris-for-montana-1980s">
                         <div class="product-image-container">
                             <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1520255305190-GJGOC4593DU6TB0GL1MP/3136433_master.jpg?format=500w" alt="Silvertone and clear paste earrings, Clare Deve (Paris) for Montana, 1980s">
                         </div>
@@ -654,7 +666,7 @@
                     </a>
                 </div>
                 <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Exceptionally%20large%2C%20but%20light%2C%20chandelier%20earrings%2C%201960s">
+                    <a href="product.html?id=exceptionally-large-but-light-chandelier-earrings-1960s">
                         <div class="product-image-container">
                             <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1520256140083-LXXZJJSRNPMAP40V74RJ/3136293_master.jpg?format=500w" alt="Exceptionally large, but light, chandelier earrings, 1960s">
                         </div>
@@ -662,7 +674,7 @@
                     </a>
                 </div>
                 <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%201970s%20silvertone%20and%20opaline%20glass%20super%20long%20earrings">
+                    <a href="product.html?id=1970s-silvertone-and-opaline-glass-super-long-earrings">
                         <div class="product-image-container">
                             <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1520511637227-VWQEOQCBGY5IFIE76OU8/1715003_l.jpg?format=500w" alt="1970s silvertone and opaline glass super long earrings">
                         </div>
@@ -670,7 +682,7 @@
                     </a>
                 </div>
                 <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Late%201950s%20Enamel%20and%20faux%20pearl%20drop%20earrings%20by%20Hattie%20Carnegie%20USA">
+                    <a href="product.html?id=late-1950s-enamel-and-faux-pearl-drop-earrings-by-hattie-carnegie-usa">
                         <div class="product-image-container">
                             <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1535993878796-O5E3O9IVI0VSI315SZWD/image.png?format=500w" alt="Late 1950s Enamel and faux pearl drop earrings by Hattie Carnegie USA">
                         </div>
@@ -678,7 +690,7 @@
                     </a>
                 </div>
                 <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Silver%20plated%20kinetic%20drop%20earrings%20with%20lace%20like%20design%2C%20Mosell%20U%2ES%2EA%2E%201950s">
+                    <a href="product.html?id=silver-plated-kinetic-drop-earrings-with-lace-like-design-mosell-usa-1950s">
                         <div class="product-image-container">
                             <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1535995010664-Z8TXKYXKRJFMROBBDCNP/image.png?format=500w" alt="Silver plated kinetic drop earrings with lace like design, Mosell U.S.A. 1950s">
                         </div>
@@ -686,7 +698,7 @@
                     </a>
                 </div>
                 <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Robert%20Original%20Apricot%20faux%20pearl%2C%20Russian%20gilt%20and%20crystal%20earrings%201950s">
+                    <a href="product.html?id=robert-original-apricot-faux-pearl-russian-gilt-and-crystal-earrings-1950s">
                         <div class="product-image-container">
                             <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1535996175131-0EP1ADSWC9ZUZ1Y5YQRV/image.png?format=500w" alt="Robert Original Apricot faux pearl, Russian gilt and crystal earrings 1950s">
                         </div>
@@ -694,7 +706,7 @@
                     </a>
                 </div>
                 <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Handbeaded%20sea%20coloured%20crystal%20%27double%20ball%27%20earrings%2C%20Coppola%20e%20Toppo%2C%20c1967">
+                    <a href="product.html?id=handbeaded-sea-coloured-crystal-double-ball-earrings-coppola-e-toppo-c1967">
                         <div class="product-image-container">
                             <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1535998955505-IKT3MRTU0YJDBVTHRIW4/image.png?format=500w" alt="Handbeaded sea coloured crystal 'double ball' earrings, Coppola e Toppo, c1967">
                         </div>
@@ -702,15 +714,15 @@
                     </a>
                 </div>
                 <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Elsa%20Schiaparelli%20Rivoli%20glass%20and%20crumpled%20effect%20silver%20tone%20earrings%2C%201950s">
+                    <a href="product.html?id=elsa-schiaparelli-rivoli-glass-and-crumpled-effect-silver-tone-earrings-1950s">
                         <div class="product-image-container">
-                            <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1532958599145-8MTEJEDEW6TB8SVEU@4X/3513923_master.jpg?format=500w" alt="Elsa Schiaparelli Rivoli glass and crumpled effect silver tone earrings, 1950s">
+                            <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1532958599145-8MTEJEDEW6TB8SVEUP4X/3513923_master.jpg?format=500w" alt="Elsa Schiaparelli Rivoli glass and crumpled effect silver tone earrings, 1950s">
                         </div>
                         <div class="product-title">Elsa Schiaparelli Rivoli glass and crumpled effect silver tone earrings, 1950s</div>
                     </a>
                 </div>
                 <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Rhodenite%2C%20citrine%20and%20rose%20quartz%20earrings%2C%20Iradj%20Moini%2C%20USA%2C%201980s">
+                    <a href="product.html?id=rhodenite-citrine-and-rose-quartz-earrings-iradj-moini-usa-1980s">
                         <div class="product-image-container">
                             <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1536000516421-06E2WQCPB8GFQV4YX9CW/image.png?format=500w" alt="Rhodenite, citrine and rose quartz earrings, Iradj Moini, USA, 1980s">
                         </div>
@@ -718,7 +730,7 @@
                     </a>
                 </div>
                 <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Miriam%20Haskell%20Faux%20Coral%20Drop%20Earrings">
+                    <a href="product.html?id=miriam-haskell-faux-coral-drop-earrings">
                         <div class="product-image-container">
                             <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1570203383345-6LY36EMI45M2E37YP9SX/Website+Stock1.jpg?format=500w" alt="Miriam Haskell Faux Coral Drop Earrings">
                         </div>
@@ -733,7 +745,7 @@
             <h2>Bracelets</h2>
             <div class="product-grid">
                 <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Highly%20unusual%20Regency%20cut%20steel%20and%20mother%20of%20pearl%20on%20silver%20bracelet">
+                    <a href="product.html?id=highly-unusual-regency-cut-steel-and-mother-of-pearl-on-silver-bracelet">
                         <div class="product-image-container">
                             <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1499772907486-XRVK6670YWDHQIY034TL/1978953_l.jpg?format=500w" alt="Highly unusual Regency cut steel and mother of pearl on silver bracelet">
                         </div>
@@ -741,7 +753,7 @@
                     </a>
                 </div>
                 <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Wonderfully%20architectural%20rhodium%20plated%20rhinestone%20cocktail%20bracelet%2C%201950s">
+                    <a href="product.html?id=wonderfully-architectural-rhodium-plated-rhinestone-cocktail-bracelet-1950s">
                         <div class="product-image-container">
                             <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1499773158779-ASWP6FF3VCTMKC9TV8Y7/1979003_l.jpg?format=500w" alt="Wonderfully architectural rhodium plated rhinestone cocktail bracelet, 1950s">
                         </div>
@@ -749,15 +761,15 @@
                     </a>
                 </div>
                 <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Kreisler%20gilt%20and%20paste%20%27buckle%27%20choker%20and%20bracelet%2C%201940s">
+                    <a href="product.html?id=kreisler-gilt-and-paste-buckle-choker-and-bracelet-1940s">
                         <div class="product-image-container">
-                            <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1500394013220-HRJ1E7O5TD1H0U109J0T/2479773_l.jpg?format=500w" alt="Kreisler gilt and paste 'buckle' choker and bracelet, 1940s">
+                            <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1500394013220-HRJ1E7O4WD1H0U109J0T/2479773_l.jpg?format=500w" alt="Kreisler gilt and paste 'buckle' choker and bracelet, 1940s">
                         </div>
                         <div class="product-title">Kreisler gilt and paste 'buckle' choker and bracelet, 1940s</div>
                     </a>
                 </div>
                 <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Knock%20out%20rhinestone%20heart%20cuff%20by%20Lawrence%20Vrba%20N%2EY%2EC">
+                    <a href="product.html?id=knock-out-rhinestone-heart-cuff-by-lawrence-vrba-nyc">
                         <div class="product-image-container">
                             <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1520507868732-092J4M0ENQCYW16SS0P9/2479533_l.jpg?format=500w" alt="Knock out rhinestone heart cuff by Lawrence Vrba N.Y.C">
                         </div>
@@ -765,7 +777,7 @@
                     </a>
                 </div>
                 <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Fluid%20rhodium%20plated%20cocktail%20bracelet%20with%20clear%20and%20red%20paste%20accents%2C%201950s">
+                    <a href="product.html?id=fluid-rhodium-plated-cocktail-bracelet-with-clear-and-red-paste-accents-1950s">
                         <div class="product-image-container">
                             <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1520509682891-VYM4UVXAUE0DI0NE87XM/2150533_l.jpg?format=500w" alt="Fluid rhodium plated cocktail bracelet with clear and red paste accents, 1950s">
                         </div>
@@ -773,7 +785,7 @@
                     </a>
                 </div>
                 <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Sleek%20Finnish%201970s%20Sterling%20silver%20gilt%20and%20rock%20crystal%20dramatic%20cuff%20bracelet">
+                    <a href="product.html?id=sleek-finnish-1970s-sterling-silver-gilt-and-rock-crystal-dramatic-cuff-bracelet">
                         <div class="product-image-container">
                             <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1520513859758-QDWGTEA9CZXFW5CKXWQU/1147312_master.jpg?format=500w" alt="Sleek Finnish 1970s Sterling silver gilt and rock crystal dramatic cuff bracelet">
                         </div>
@@ -781,7 +793,7 @@
                     </a>
                 </div>
                 <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Coppola%20e%20Toppo%20Turquoise%20Crystal%20Bracelet%20and%20Earrings%20Set%201950s">
+                    <a href="product.html?id=coppola-e-toppo-turquoise-crystal-bracelet-and-earrings-set-1950s">
                         <div class="product-image-container">
                             <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1520515003183-4V75MVEUHX3DE3LLE42E/927753_l.jpg?format=500w" alt="Coppola e Toppo Turquoise Crystal Bracelet and Earrings Set 1950s">
                         </div>
@@ -796,15 +808,15 @@
             <h2>Brooches</h2>
             <div class="product-grid">
                 <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Eisenburg%20Original%201940s%20pot metal%20and%20clear%20paste%20fur%20clip">
+                    <a href="product.html?id=eisenburg-original-1940s-pot-metal-and-clear-paste-fur-clip">
                         <div class="product-image-container">
-                            <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1499774496299-Z5E0209GFPH8C6RRBSHNLJ/1978833_l.jpg?format=500w" alt="Eisenburg Original 1940s pot metal and clear paste fur clip">
+                            <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1499774496299-Z5E09GFPH8C6RRBSHNLJ/1978833_l.jpg?format=500w" alt="Eisenburg Original 1940s pot metal and clear paste fur clip">
                         </div>
                         <div class="product-title">Eisenburg Original 1940s pot metal and clear paste fur clip</div>
                     </a>
                 </div>
                 <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Lee%20Menechetti%20for%20Polcini%201972%20Cleopatra%20brooch">
+                    <a href="product.html?id=lee-menechetti-for-polcini-1972-cleopatra-brooch">
                         <div class="product-image-container">
                             <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1519660340065-9E0D1PUM6M97ZH932V99/3407683_master.jpg?format=500w" alt="Lee Menechetti for Polcini 1972 Cleopatra brooch">
                         </div>
@@ -812,15 +824,15 @@
                     </a>
                 </div>
                 <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Huge%20hand%20made%20silver%20and%20Amethyst%20allegorical%20pendant%2C%201970s">
+                    <a href="product.html?id=huge-hand-made-silver-and-amethyst-allegorical-pendant-1970s">
                         <div class="product-image-container">
-                            <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1520253648498-4DNGWEPG5407RAF040O7/3407413_master.jpg?format=500w" alt="Huge hand made silver and Amethyst allegorical pendant, 1970s">
+                            <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1520253648498-4DL¦WEPG547RAF040O7/3407413_master.jpg?format=500w" alt="Huge hand made silver and Amethyst allegorical pendant, 1970s">
                         </div>
                         <div class="product-title">Huge hand made silver and Amethyst allegorical pendant, 1970s</div>
                     </a>
                 </div>
                 <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Huge%20sterling%20silver%20%27tulip%27%20brooch%2C%20Carl%20Ruopoli%2C%201940s">
+                    <a href="product.html?id=huge-sterling-silver-tulip-brooch-carl-ruopoli-1940s">
                         <div class="product-image-container">
                             <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1520256614282-VHNWHC5WPXMMKG9QT9U8/3136253_master.jpg?format=500w" alt="Huge sterling silver 'tulip' brooch, Carl Ruopoli, 1940s">
                         </div>
@@ -828,363 +840,129 @@
                     </a>
                 </div>
                 <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20%27Catherine%20wheel%27%20clear%20paste%2C%20rhodium%20plated%20brooch%2C%20Weiss%20USA%2C%201950s">
+                    <a href="product.html?id=catherine-wheel-clear-paste-rhodium-plated-brooch-weiss-usa-1950s">
                         <div class="product-image-container">
                             <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1520273002983-T5B7HH821ANQ7HTPQ4SY/3058673_master.jpg?format=500w" alt="'Catherine wheel' clear paste, rhodium plated brooch, Weiss USA, 1950s">
                         </div>
-                        <div class="product-title">'Catherine wheel' clear paste, rhodium plated brooch, Weiss USA, 1950s</div>
-                    </a>
-                </div>
-                <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Gilt%20bronze%20and%20silver%20artisan%20made%20archeolgical%20style%20brooch%2C%201980s">
-                        <div class="product-image-container">
-                            <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1520273684609-BPSZ2THT0UQAPYIXOSJL/3058623_master.jpg?format=500w" alt="Gilt bronze and silver artisan made archeolgical style brooch, 1980s">
-                        </div>
-                        <div class="product-title">Gilt bronze and silver artisan made archeolgical style brooch, 1980s</div>
-                    </a>
-                </div>
-                <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Marquise%20cut%20rhinestone%20and%20rhodium%20plated%20brooch%20or%20pendant%2C%201950s">
-                        <div class="product-image-container">
-                            <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1532961414503-T5IRHBTNQOTO0WB7292W/3058643_master.jpg?format=500w" alt="Marquise cut rhinestone and rhodium plated brooch or pendant, 1950s">
-                        </div>
-                        <div class="product-title">Marquise cut rhinestone and rhodium plated brooch or pendant, 1950s</div>
-                    </a>
-                </div>
-                <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Victorian%20Aesthetic%20movement%20gilt%20metal%20and%20enamel%20shawl%20pin">
-                        <div class="product-image-container">
-                            <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1519662898906-Q3BX8V4LCS85XKG0NCEN/3407633_master.jpg?format=500w" alt="Victorian Aesthetic movement gilt metal and enamel shawl pin">
-                        </div>
-                        <div class="product-title">Victorian Aesthetic movement gilt metal and enamel shawl pin</div>
-                    </a>
-                </div>
-            </div>
-        </section>
+                        <div claÜÏHÙXÝ]]HÐØ]\[HÚY[	ÈÛX\\ÝKÙ][H]YÛØÚÙZ\ÜÈTÐKNMLÏÙ]ØOÙ]]Û\ÜÏHÙXÝXØ\HYHÙXÝ[ÚYYÚ[XÛKX[\Ú[\X\\Ø[[XYKX\Ú[ÛÚXØ[\Ý[KXÛØÚLNNÈ]Û\ÜÏHÙXÝZ[XYÙKXÛÛZ[\[YÈÜÏHÎËÚ[XYÙ\ËÜ]X\\ÜXÙKXÙÛÛKØÛÛ[ÝKÍNLYXM
+MXÙÙÎNÌXÎÌMLÌÍ
 
-        <!-- HEADWEAR -->
-        <section class="category-section">
-            <h2>Headwear</h2>
-            <div class="product-grid">
-                <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Black%20Vauxhall%20glass%20Tiara%2C%2019th%20century">
-                        <div class="product-image-container">
-                            <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1519661529527-S6P236DTTM7BM4CGLPCQ/3514073_master.jpg?format=500w" alt="Black Vauxhall glass Tiara, 19th century">
-                        </div>
-                        <div class="product-title">Black Vauxhall glass Tiara, 19th century</div>
-                    </a>
-                </div>
-                <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Early%20Victorian%20gilt%20metal%20and%20clear%20paste%20hair%20ornament%20or%20small%20tiara%2C%20c1830s">
-                        <div class="product-image-container">
-                            <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1519661212936-6I12RFSNGHJ8MRYN8YIZ/3514033_master.jpg?format=500w" alt="Early Victorian gilt metal and clear paste hair ornament or small tiara, c1830s">
-                        </div>
-                        <div class="product-title">Early Victorian gilt metal and clear paste hair ornament or small tiara, c1830s</div>
-                    </a>
-                </div>
-            </div>
-        </section>
+KPÖTPTRVÔÒÌÌ
+N
+×ÛX\Ý\ÏÙÜX]MLÈ[HÚ[ÛH[Ú[\\\Ø[XYH\Ú[ÛÚXØ[Ý[HÛØÚNNÈÙ]]Û\ÜÏHÙXÝ]]HÚ[ÛH[Ú[\\\Ø[XYH\Ú[ÛÚXØ[Ý[HÛØÚNNÏÙ]ØOÙ]]Û\ÜÏHÙXÝXØ\HYHÙXÝ[ÚY[X\]Z\ÙKXÝ]\[\ÝÛKX[\Ù][K\]YXÛØÚ[Ü\[[LNMLÈ]Û\ÜÏHÙXÝZ[XYÙKXÛÛZ[\[YÈÜÏHÎËÚ[XYÙ\ËÜ]X\\ÜXÙKXÙÛÛKØÛÛ[ÝKÍNLYXM
+MXÙÙÎNÌXÎÌMLÌMMM
+LËU
+RTSÕÌÐÌLËÌÌ
+N
+×ÛX\Ý\ÏÙÜX]MLÈ[HX\]Z\ÙHÝ][\ÝÛH[Ù][H]YÛØÚÜ[[NMLÈÙ]]Û\ÜÏHÙXÝ]]HX\]Z\ÙHÝ][\ÝÛH[Ù][H]YÛØÚÜ[[NMLÏÙ]ØOÙ]]Û\ÜÏHÙXÝXØ\HYHÙXÝ[ÚY]XÝÜX[XY\Ý]XË[[Ý[Y[YÚ[[Y][X[Y[[Y[\Ú]Û\[]Û\ÜÏHÙXÝZ[XYÙKXÛÛZ[\[YÈÜÏHÎËÚ[XYÙ\ËÜ]X\\ÜXÙKXÙÛÛKØÛÛ[ÝKÍNLYXM
+MXÙÙÎNÌXÎÌMLNMNL
+TLÐÔÎ
+VÑÌÑSÌÍ
+ÍÌ×ÛX\Ý\ÏÙÜX]MLÈ[HXÝÜX[Y\Ý]XÈ[Ý[Y[Ú[Y][[[[Y[Ú]Û[Ù]]Û\ÜÏHÙXÝ]]HXÝÜX[Y\Ý]XÈ[Ý[Y[Ú[Y][[[[Y[Ú]Û[Ù]ØOÙ]Ù]ÜÙXÝ[ÛKKHPQÑPTKOÙXÝ[ÛÛ\ÜÏHØ]YÛÜK\ÙXÝ[ÛXYÙX\Ú]Û\ÜÏHÙXÝYÜY]Û\ÜÏHÙXÝXØ\HYHÙXÝ[ÚYXXÚË]]^[YÛ\ÜË]X\KLN]XÙ[\H]Û\ÜÏHÙXÝZ[XYÙKXÛÛZ[\[YÈÜÏHÎËÚ[XYÙ\ËÜ]X\\ÜXÙKXÙÛÛKØÛÛ[ÝKÍNLYXM
+MXÙÙÎNÌXÎÌMLNMMLMLËTÍÍMÐMÑÓÔKÌÍLM
+Ì×ÛX\Ý\ÏÙÜX]MLÈ[HXÚÈ]^[Û\ÜÈX\KN]Ù[\HÙ]]Û\ÜÏHÙXÝ]]HXÚÈ]^[Û\ÜÈX\KN]Ù[\OÙ]ØOÙ]]Û\ÜÏHÙXÝXØ\HYHÙXÝ[ÚYYX\K]XÝÜX[YÚ[[Y][X[XÛX\\\ÝKZZ\[Ü[Y[[Ü\ÛX[]X\KXÌNÌÈ]Û\ÜÏHÙXÝZ[XYÙKXÛÛZ[\[YÈÜÏHÎËÚ[XYÙ\ËÜ]X\\ÜXÙKXÙÛÛKØÛÛ[ÝKÍNLYXM
+MXÙÙÎNÌXÎÌMLNMLLLÍMLLÓÒTSRVÌÍLMÌ×ÛX\Ý\ÏÙÜX]MLÈ[HX\HXÝÜX[Ú[Y][[ÛX\\ÝHZ\Ü[Y[ÜÛX[X\KÌNÌÈÙ]]Û\ÜÏHÙXÝ]]HX\HXÝÜX[Ú[Y][[ÛX\\ÝHZ\Ü[Y[ÜÛX[X\KÌNÌÏÙ]ØOÙ]Ù]ÜÙXÝ[ÛKKHÑUÈKOÙXÝ[ÛÛ\ÜÏHØ]YÛÜK\ÙXÝ[ÛÙ]ÏÚ]Û\ÜÏHÙXÝYÜY]Û\ÜÏHÙXÝXØ\HYHÙXÝ[ÚYX[X[][X\Ú[ÛÙÚXØ[\\\KXÌNNÈ]Û\ÜÏHÙXÝZ[XYÙKXÛÛZ[\[YÈÜÏHÎËÚ[XYÙ\ËÜ]X\\ÜXÙKXÙÛÛKØÛÛ[ÝKÍNLYXM
+MXÙÙÎNÌXÎÌMMÍNÍNËPLMÑQRRN
+ÑN
+ÐRÌÎNÌ×ÛÏÙÜX]MLÈ[H[P[][	Ð\Ú[ÛÙÚXØ[	È\\KÌNNÈÙ]]Û\ÜÏHÙXÝ]]H[P[][	Ð\Ú[ÛÙÚXØ[	È\\KÌNNÏÙ]ØOÙ]]Û\ÜÏHÙXÝXØ\HYHÙXÝ[ÚY[[ÜÙ[[XËYYÞ\X[\Ý[KYÚ[XÛÛ\X[XXÙ[]LNMÈ]Û\ÜÏHÙXÝZ[XYÙKXÛÛZ[\[YÈÜÏHÎËÚ[XYÙ\ËÜ]X\\ÜXÙKXÙÛÛKØÛÛ[ÝKÍNLYXM
+MXÙÙÎNÌXÎÌMLÌ
+N
+KTSÖLT
+ÕÌËÌÌ
+N
+×ÛX\Ý\ÏÙÜX]MLÈ[H[ÜÙ[PÈYÞ\X[Ý[HÚ[ÛÛ\[XÙ[]NMÈÙ]]Û\ÜÏHÙXÝ]]H[ÜÙ[PÈYÞ\X[Ý[HÚ[ÛÛ\[XÙ[]NMÏÙ]ØOÙ]]Û\ÜÏHÙXÝXØ\HYHÙXÝ[ÚY\ØÚX\\[KMK\Ý[XÚÚÙ\X[[X]Ú[ËXÛ\YX\[ÜËLNMLÈ]Û\ÜÏHÙXÝZ[XYÙKXÛÛZ[\[YÈÜÏHÎËÚ[XYÙ\ËÜ]X\\ÜXÙKXÙÛÛKØÛÛ[ÝKÍNLYXM
+MXÙÙÎNÌXÎÌML
+LLM
+LMUQQTS
+MÑÔÌMLML×ÛÏÙÜX]MLÈ[HØÚX\\[H
+HÝ[ÚÚÙ\[X]Ú[ÈÛ\X\[ÜËNMLÈÙ]]Û\ÜÏHÙXÝ]]HØÚX\\[H
+HÝ[ÚÚÙ\[X]Ú[ÈÛ\X\[ÜËNMLÏÙ]ØOÙ]Ù]ÜÙXÝ[ÛKKHPÐÑTÔÓÔQTÈKOÙXÝ[ÛÛ\ÜÏHØ]YÛÜK\ÙXÝ[ÛXØÙ\ÜÛÜY\ÏÚ]Û\ÜÏHÙXÝYÜY]Û\ÜÏHÙXÝXØ\HYHÙXÝ[ÚYYYÞ\X[\Ü[\ÛZÙ\ÚÚ[XY\ÝXKX[]Û\ÜÏHÙXÝZ[XYÙKXÛÛZ[\[YÈÜÏHÎËÚ[XYÙ\ËÜ]X\\ÜXÙKXÙÛÛKØÛÛ[ÝKÍNLYXM
+MXÙÙÎNÌXÎÌMLÎMÌ
+
+ÎKTÑ
+RÌÕVLPËÌ
+ÎMLL×ÛÏÙÜX]MLÈ[HYÞ\X[Ü[ÛZÙ\ÚÚ[Y\ÝXH[Ù]]Û\ÜÏHÙXÝ]]HYÞ\X[Ü[ÛZÙ\ÚÚ[Y\ÝXH[Ù]ØOÙ]]Û\ÜÏHÙXÝXØ\HYHÙXÝ[ÚYZXÛÛXËXXÚË[X]\YÛYX]ÜX[X^Y[KX[ZXKLNNÈ]Û\ÜÏHÙXÝZ[XYÙKXÛÛZ[\[YÈÜÏHÎËÚ[XYÙ\ËÜ]X\\ÜXÙKXÙÛÛKØÛÛ[ÝKÍNLYXM
+MXÙÙÎNÌXÎÌMLN
+ÌÎL
+QLÑNURÍÒMÍÓÍSKÌÌ
+NLÌ×ÛX\Ý\ÏÙÜX]MLÈ[HXÛÛXÈXÚÈX]\	ÙÛYX]ÜÈ[^Y[H[ZXHNNÈÙ]]Û\ÜÏHÙXÝ]]HXÛÛXÈXÚÈX]\	ÙÛYX]ÜÈ[^Y[H[ZXHNNÏÙ]ØOÙ]]Û\ÜÏHÙXÝXØ\HYHÙXÝ[ÚYZXÛÛXË\XÛË\X[KYÚ[Y\ØËX[LNMÈ]Û\ÜÏHÙXÝZ[XYÙKXÛÛZ[\[YÈÜÏHÎËÚ[XYÙ\ËÜ]X\\ÜXÙKXÙÛÛKØÛÛ[ÝKÍNLYXM
+MXÙÙÎNÌXÎÌML
+LLÍÍ
+ÌQUÒSÓÎÎRKÒSQ×ÍÌML×ÛÜ×ÛÏÙÜX]MLÈ[HXÛÛXÈXÛÈX[HÚ[	È\ØÉÈ[NMÈÙ]]Û\ÜÏHÙXÝ]]HXÛÛXÈXÛÈX[HÚ[	È\ØÉÈ[NMÏÙ]ØOÙ]Ù]ÜÙXÝ[ÛKKHÓÓÑPÕSÓKO]Û\ÜÏHÛÛ\ÙXÝ[ÛÛÛÚKKHÓÓPÒÓPÑTÈKO]Û\ÜÏHÛÛXØ]YÛÜHÏXÚÛXÙ\ÏÚÏ]Û\ÜÏHÛÛYÜY]Û\ÜÏHÛÛXØ\HYHÙXÝ[ÚYZÞ[Ý\Ë^]\Ë\ØZ[[]\[YZ\ÞK\X\Ú[X[XXÚËYÛ\ÜË\[[LNNÈ]Û\ÜÏHÛÛZ[XYÙKXÛÛZ[\[YÈÜÏHÎËÚ[XYÙ\ËÜ]X\\ÜXÙKXÙÛÛKØÛÛ[ÝKÍNLYXM
+MXÙÙÎNÌXÎÌMNMÍM
+MÌKQÖUÔRÎLMÑÐÒPÒVÌMLM×ÛÏÙÜX]MLÈ[HÞ[Ý\È]\ÈØZ[]\[	ÙZ\ÞIÈX\Ú[[XÚÈÛ\ÜÈ[[NNÈÜ[Û\ÜÏHÛÛ[X[ÓÓÜÜ[Ù]]Û\ÜÏHÛÛ]]HÞ[Ý\È]\ÈØZ[]\[	ÙZ\ÞIÈX\Ú[[XÚÈÛ\ÜÈ[[NNÏÙ]ØOÙ]]Û\ÜÏHÛÛXØ\HYHÙXÝ[ÚYZÙ[]Z^K[[KLNMË\ÜXÝXÝ[\YÜY[YÛ\ÜËX[XÛX\\\ÝKXÛÛ\[XÚÛXÙH]Û\ÜÏHÛÛZ[XYÙKXÛÛZ[\[YÈÜÏHÎËÚ[XYÙ\ËÜ]X\\ÜXÙKXÙÛÛKØÛÛ[ÝKÍNLYXM
+MXÙÙÎNÌXÎÌMLÎMMLÍMN
+PÓÒQÒQÑÌLPTÕ
+KÌ
+ÎMÌ×ÛÏÙÜX]MLÈ[HÙ[]^H[HNMÈÜXÝXÝ[\ÜY[Û\ÜÈ[ÛX\\ÝHÛÛ\XÚÛXÙHÜ[Û\ÜÏHÛÛ[X[ÓÓÜÜ[Ù]]Û\ÜÏHÛÛ]]HÙ[]^H[HNMÈÜXÝXÝ[\ÜY[Û\ÜÈ[ÛX\\ÝHÛÛ\XÚÛXÙOÙ]ØOÙ]]Û\ÜÏHÛÛXØ\HYHÙXÝ[ÚY\Ý[[Ë[X\Ù[XÝXÚ\YÚ[X[Y[[Y[Z\\]Z[[XÚÛXÙKLNMÈ]Û\ÜÏHÛÛZ[XYÙKXÛÛZ[\[YÈÜÏHÎËÚ[XYÙ\ËÜ]X\\ÜXÙKXÙÛÛKØÛÛ[ÝKÍNLYXM
+MXÙÙÎNÌXÎÌMLÎMÌLNNUPÖLÎMPÍLÎVMÑSKÌ
+ÎML×ÛÏÙÜX]MLÈ[HÝ[[ÈX\Ù[ÝXÚ\Ú[[[[Y[	Ú\\]Z[ÈXÚÛXÙKNMÈÜ[Û\ÜÏHÛÛ[X[ÓÓÜÜ[Ù]]Û\ÜÏHÛÛ]]HÝ[[ÈX\Ù[ÝXÚ\Ú[[[[Y[	Ú\\]Z[ÈXÚÛXÙKNMÏÙ]ØOÙ]]Û\ÜÏHÛÛXØ\HYHÙXÝ[ÚY[ÛËX\Ü]YK\X\[XÚÛXÙK]Ú]XÙ[\YXÙK[Z\X[KZ\ÚÙ[LNMLÈ]Û\ÜÏHÛÛZ[XYÙKXÛÛZ[\[YÈÜÏHÎËÚ[XYÙ\ËÜ]X\\ÜXÙKXÙÛÛKØÛÛ[ÝKÍNLYXM
+MXÙÙÎNÌXÎÌMLNMNMKQRPSLÐMÔLQÑÌÍÍ
+Í×ÛX\Ý\ÏÙÜX]MLÈ[HÛÈ\Ü]YHX\XÚÛXÙKÚ]Ù[\YXÙKZ\X[H\ÚÙ[NMLÈÜ[Û\ÜÏHÛÛ[X[ÓÓÜÜ[Ù]]Û\ÜÏHÛÛ]]HÛÈ\Ü]YHX\XÚÛXÙKÚ]Ù[\YXÙKZ\X[H\ÚÙ[NMLÏÙ]ØOÙ]]Û\ÜÏHÛÛXØ\HYHÙXÝ[ÚYX[\]YK]XÝÜX[]]^[YÛ\ÜË[XÚÛXÙK]Ú]Y]XÚXK\[[LN
+LÈ]Û\ÜÏHÛÛZ[XYÙKXÛÛZ[\[YÈÜÏHÎËÚ[XYÙ\ËÜ]X\\ÜXÙKXÙÛÛKØÛÛ[ÝKÍNLYXM
+MXÙÙÎNÌXÎÌMLNMMMÌÍNKRÑÒÑÐÔ
+LMÕÎMËÌÍLMN×ÛX\Ý\ÏÙÜX]MLÈ[H[\]YHXÝÜX[]^[Û\ÜÈXÚÛXÙHÚ]]XÚXH[[N
+LÈÜ[Û\ÜÏHÛÛ[X[ÓÓÜÜ[Ù]]Û\ÜÏHÛÛ]]H[\]YHXÝÜX[]^[Û\ÜÈXÚÛXÙHÚ]]XÚXH[[N
+LÏÙ]ØOÙ]]Û\ÜÏHÛÛXØ\HYHÙXÝ[ÚY[]KLN]XÙ[\KX\ÜËX[YÛ\ÜË]X]XØ[[XÚÛXÙKY[ÙH]Û\ÜÏHÛÛZ[XYÙKXÛÛZ[\[YÈÜÏHÎËÚ[XYÙ\ËÜ]X\\ÜXÙKXÙÛÛKØÛÛ[ÝKÍNLYXM
+MXÙÙÎNÌXÎÌMLNMMÍ
+ÌKR
+ÒÐÎMQÖSLÓÐËÌÍLLÍÍ×ÛX\Ý\ÏÙÜX]MLÈ[H]HN]Ù[\H\ÜÈ[Û\ÜÈX]XØ[XÚÛXÙK[ÙKÜ[Û\ÜÏHÛÛ[X[ÓÓÜÜ[Ù]]Û\ÜÏHÛÛ]]H]HN]Ù[\H\ÜÈ[Û\ÜÈX]XØ[XÚÛXÙK[ÙKÙ]ØOÙ]]Û\ÜÏHÛÛXØ\HYHÙXÝ[ÚY\Ý\\YY\Y[Y\[YÛ\ÜË\[[[XÚÛXÙKV]\Ë\ØZ[[]\[LNNÈ]Û\ÜÏHÛÛZ[XYÙKXÛÛZ[\[YÈÜÏHÎËÚ[XYÙ\ËÜ]X\\ÜXÙKXÙÛÛKØÛÛ[ÝKÍNLYXM
+MXÙÙÎNÌXÎÌMLNMÍ
+ÌLNUÔUÎL
+RUMÕÐÌÍ
+Í×ÛX\Ý\ÏÙÜX]MLÈ[HÝ\\Y\[Y\[Û\ÜÈ[[XÚÛXÙK]\ÈØZ[]\[NNÈÜ[Û\ÜÏHÛÛ[X[ÓÓÜÜ[Ù]]Û\ÜÏHÛÛ]]HÝ\\Y\[Y\[Û\ÜÈ[[XÚÛXÙK]\ÈØZ[]\[NNÏÙ]ØOÙ]]Û\ÜÏHÛÛXØ\HYHÙXÝ[ÚYXÚ\ÝX[Y[ÜY[YØ[XÛX\\\ÝKX[\X\X\X\Ü]YK[XÚÛXÙKLNMLÈ]Û\ÜÏHÛÛZ[XYÙKXÛÛZ[\[YÈÜÏHÎËÚ[XYÙ\ËÜ]X\\ÜXÙKXÙÛÛKØÛÛ[ÝKÍNLYXM
+MXÙÙÎNÌXÎÌML
+L
+Ì
+MKRU
+ÖQMNSRRÖSUVKÌML
+ÍÌ×ÛX\Ý\ÏÙÜX]MLÈ[HÚ\ÝX[[Ü[YØ[ÛX\\ÝH[X\\X\Ü]YHXÚÛXÙKNMLÈÜ[Û\ÜÏHÛÛ[X[ÓÓÜÜ[Ù]]Û\ÜÏHÛÛ]]HÚ\ÝX[[Ü[YØ[ÛX\\ÝH[X\\X\Ü]YHXÚÛXÙKNMLÏÙ]ØOÙ]]Û\ÜÏHÛÛXØ\HYHÙXÝ[ÚYY^]Z\Ú]KZ[XYK[[ÙÚ[\Ý[K[XÚÛXÙKXÚ[[LNMÈ]Û\ÜÏHÛÛZ[XYÙKXÛÛZ[\[YÈÜÏHÎËÚ[XYÙ\ËÜ]X\\ÜXÙKXÙÛÛKØÛÛ[ÝKÍNLYXM
+MXÙÙÎNÌXÎÌML
+LMMMÍPTLNPMLÔÕÌÔÌML
+×ÛÏÙÜX]MLÈ[H^]Z\Ú]H[XYH[ÙÚ[Ý[HXÚÛXÙKÚ[[NMÈÜ[Û\ÜÏHÛÛ[X[ÓÓÜÜ[Ù]]Û\ÜÏHÛÛ]]H^]Z\Ú]H[XYH[ÙÚ[Ý[HXÚÛXÙKÚ[[NMÏÙ]ØOÙ]]Û\ÜÏHÛÛXØ\HYHÙXÝ[ÚY[[ÙÚ[Z[Ü\YZÙ[][[KLNMËXÛÛ\X[XX[XÚÛXÙH]Û\ÜÏHÛÛZ[XYÙKXÛÛZ[\[YÈÜÏHÎËÚ[XYÙ\ËÜ]X\\ÜXÙKXÙÛÛKØÛÛ[ÝKÍNLYXM
+MXÙÙÎNÌXÎÌML
+LLLL
+ËVPVLPÎQLÒQUMSÌMLNL×ÛÏÙÜX]MLÈ[H[ÙÚ[[Ü\YÙ[][HNMÈÛÛ\[XXÚÛXÙHÜ[Û\ÜÏHÛÛ[X[ÓÓÜÜ[Ù]]Û\ÜÏHÛÛ]]H[ÙÚ[[Ü\YÙ[][HNMÈÛÛ\[XXÚÛXÙOÙ]ØOÙ]Ù]Ù]KKHÓÓPTSÔÈKO]Û\ÜÏHÛÛXØ]YÛÜHÏX\[ÜÏÚÏ]Û\ÜÏHÛÛYÜY]Û\ÜÏHÛÛXØ\HYHÙXÝ[ÚY\ÝZÚ[Ë]\K[\ÙKYÚ[[Y][X[YÛ\ÜËYX\XÛ\Ë^]\Ë\ØZ[[]\[LNNÈ]Û\ÜÏHÛÛZ[XYÙKXÛÛZ[\[YÈÜÏHÎËÚ[XYÙ\ËÜ]X\\ÜXÙKXÙÛÛKØÛÛ[ÝKÍNLYXM
+MXÙÙÎNÌXÎÌMLNMM
+N
+LRÕVSÐSRÐUUÌÍ
+ÍÌÌ×ÛX\Ý\ÏÙÜX]MLÈ[HÝZÚ[Ë\H\ÙHÚ[Y][[Û\ÜÈX\Û\Ë]\ÈØZ[]\[NNÈÜ[Û\ÜÏHÛÛ[X[ÓÓÜÜ[Ù]]Û\ÜÏHÛÛ]]HÝZÚ[Ë\H\ÙHÚ[Y][[Û\ÜÈX\Û\Ë]\ÈØZ[]\[NNÏÙ]ØOÙ]]Û\ÜÏHÛÛXØ\HYHÙXÝ[ÚY\XK[XÚ]KX[YÚ[[Y][[\ÙKYX\XÛ\Ë^]\Ë\ØZ[[]\[\]KYØ]XÚKLNNÈ]Û\ÜÏHÛÛZ[XYÙKXÛÛZ[\[YÈÜÏHÎËÚ[XYÙ\ËÜ]X\\ÜXÙKXÙÛÛKØÛÛ[ÝKÍNLYXM
+MXÙÙÎNÌXÎÌMLMÎ
+ÌMÌËUL
+SÓÓÍPQÑRTÌÍ
+ÌÍL×ÛX\Ý\ÏÙÜX]MLÈ[HXHXÚ]H[Ú[Y][\ÙHX\Û\Ë]\ÈØZ[]\[]HØ]XÚHNNÈÜ[Û\ÜÏHÛÛ[X[ÓÓÜÜ[Ù]]Û\ÜÏHÛÛ]]HXHXÚ]H[Ú[Y][\ÙHX\Û\Ë]\ÈØZ[]\[]HØ]XÚHNNÏÙ]ØOÙ]]Û\ÜÏHÛÛXØ\HYHÙXÝ[ÚY[Û]KYÜY[[XÚ]KX[YÚ[YX\XÛ\Ë^]\Ë\ØZ[[]\[\]KYØ]XÚKLNNÈ]Û\ÜÏHÛÛZ[XYÙKXÛÛZ[\[YÈÜÏHÎËÚ[XYÙ\ËÜ]X\\ÜXÙKXÙÛÛKØÛÛ[ÝKÍNLYXM
+MXÙÙÎNÌXÎÌMLMMÍËQ
+ÌT
+RÕPPQËÌÍ
+ÌÍÌ×ÛX\Ý\ÏÙÜX]MLÈ[HÛ]HÜY[XÚ]H[Ú[X\Û\È]\ÈØZ[]\[]HØ]XÚKNNÈÜ[Û\ÜÏHÛÛ[X[ÓÓÜÜ[Ù]]Û\ÜÏHÛÛ]]HÛ]HÜY[XÚ]H[Ú[X\Û\È]\ÈØZ[]\[]HØ]XÚKNNÏÙ]ØOÙ]]Û\ÜÏHÛÛXØ\HYHÙXÝ[ÚY[XYÛYXÙ[X[Y]\Ý[XÚ]KX[\\ÝKY[YKYX\[ÜË^]\Ë\ØZ[[]\[LNN]Û\ÜÏHÛÛZ[XYÙKXÛÛZ[\[YÈÜÏHÎËÚ[XYÙ\ËÜ]X\\ÜXÙKXÙÛÛKØÛÛ[ÝKÍNLYXM
+MXÙÙÎNÌXÎÌMLM
+LÎNLÎRÑSSRSÑÔÖKÌÍ
+ÌÌÌ×ÛX\Ý\ÏÙÜX]MLÈ[HXYÛYXÙ[[Y]\ÝXÚ]H[\ÝH	Ù[YIÈX\[ÜË]\ÈØZ[]\[NNÜ[Û\ÜÏHÛÛ[X[ÓÓÜÜ[Ù]]Û\ÜÏHÛÛ]]HXYÛYXÙ[[Y]\ÝXÚ]H[\ÝH	Ù[YIÈX\[ÜË]\ÈØZ[]\[NNÙ]ØOÙ]]Û\ÜÏHÛÛXØ\HYHÙXÝ[ÚY\ØÚZ[\[Ù[]Ë^[ÜË\ØÝ[\[\\ÝKX[X\Ü]YK\X\YÜYX\[ÜÈ]Û\ÜÏHÛÛZ[XYÙKXÛÛZ[\[YÈÜÏHÎËÚ[XYÙ\ËÜ]X\\ÜXÙKXÙÛÛKØÛÛ[ÝKÍNLYXM
+MXÙÙÎNÌXÎÌML
+LLÌ
+ÎLKPÐÓÕÔÖRÐÓMÌËÌM
+×ÛÏÙÜX]MLÈ[HØÚZ[\Ù]È[ÜÈØÝ[\[\ÝH[\Ü]YHX\ÜX\[ÜÈÜ[Û\ÜÏHÛÛ[X[ÓÓÜÜ[Ù]]Û\ÜÏHÛÛ]]HØÚZ[\Ù]È[ÜÈØÝ[\[\ÝH[\Ü]YHX\ÜX\[ÜÏÙ]ØOÙ]Ù]Ù]KKHÓÓPÑSUÈKO]Û\ÜÏHÛÛXØ]YÛÜHÏXÙ[]ÏÚÏ]Û\ÜÏHÛÛYÜY]Û\ÜÏHÛÛXØ\HYHÙXÝ[ÚY[ZY]XÝÜX[\ØÛÝ\ÚXYØ]K\ÜXÚ[Y[XXÙ[]]Û\ÜÏHÛÛZ[XYÙKXÛÛZ[\[YÈÜÏHÎËÚ[XYÙ\ËÜ]X\\ÜXÙKXÙÛÛKØÛÛ[ÝKÍNLYXM
+MXÙÙÎNÌXÎÌMNMÍÌÍÌL
 
-        <!-- SETS -->
-        <section class="category-section">
-            <h2>Sets</h2>
-            <div class="product-grid">
-                <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Ben-Amun%20%27Archeological%27%20parure%2C%20c1980s">
-                        <div class="product-image-container">
-                            <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1496769835823-A17EEIHU87E8NR47BEJN/2798833_l.jpg?format=500w" alt="Ben-Amun 'Archeological' parure, c1980s">
-                        </div>
-                        <div class="product-title">Ben-Amun 'Archeological' parure, c1980s</div>
-                    </a>
-                </div>
-                <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Mosell%20NYC%20Egyptian%20style%20gilt%20collar%20and%20bracelet%2C%201960s">
-                        <div class="product-image-container">
-                            <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1520272869861-RENBGZDXXQ2DJYRJH7W3/3058683_master.jpg?format=500w" alt="Mosell NYC Egyptian style gilt collar and bracelet, 1960s">
-                        </div>
-                        <div class="product-title">Mosell NYC Egyptian style gilt collar and bracelet, 1960s</div>
-                    </a>
-                </div>
-                <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Schiaparelli%205%20strand%20choker%20and%20matching%20clip%20earrings%2C%201950s">
-                        <div class="product-image-container">
-                            <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1520508211450-6XYVNMFB89EQLT417FWP/2150953_l.jpg?format=500w" alt="Schiaparelli 5 strand choker and matching clip earrings, 1950s">
-                        </div>
-                        <div class="product-title">Schiaparelli 5 strand choker and matching clip earrings, 1950s</div>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- ACCESSORIES -->
-        <section class="category-section">
-            <h2>Accessories</h2>
-            <div class="product-grid">
-                <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Egyptian%20Sphinx%20snakeskin%20adjustable%20belt%2C">
-                        <div class="product-image-container">
-                            <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1500394304079-PF6OF85K27VRH8PRAY1C/2479513_l.jpg?format=500w" alt="Egyptian Sphinx snakeskin adjustable belt,">
-                        </div>
-                        <div class="product-title">Egyptian Sphinx snakeskin adjustable belt,</div>
-                    </a>
-                </div>
-                <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Iconic%20black%20leather%20%27gladiator%27%20belt%2C%20Azzadine%20Alaia%201980s">
-                        <div class="product-image-container">
-                            <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1520261873906-F012OE9VLMK7I4G7LS5M/3058933_master.jpg?format=500w" alt="Iconic black leather 'gladiator' belt, Azzadine Alaia 1980s">
-                        </div>
-                        <div class="product-title">Iconic black leather 'gladiator' belt, Azzadine Alaia 1980s</div>
-                    </a>
-                </div>
-                <div class="product-card">
-                    <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Iconic%20Paco%20Rabanne%20gilt%20%27disc%27%20belt%2C%201960s">
-                        <div class="product-image-container">
-                            <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1520513760870-FQWJHRTXVN5NCO8S9HZ1/IMG_7153_org_l.jpg?format=500w" alt="Iconic Paco Rabanne gilt ' disc' belt, 1960s">
-                        </div>
-                        <div class="product-title">Iconic Paco Rabanne gilt ' disc' belt, 1960s</div>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- SOLD SECTION -->
-        <div class="sold-section">
-            <h2>Sold</h2>
-
-            <!-- SOLD NECKLACES -->
-            <div class="sold-category">
-                <h3>Necklaces</h3>
-                <div class="sold-grid">
-                    <div class="sold-card">
-                        <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Joyous%20Yves%20Saint%20Laurent%20%27daisy%27%20pearl%2Cgilt%20and%20black%20glass%20pendant%2C%201980s">
-                            <div class="sold-image-container">
-                                <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1499765405671-GYTCQHTN8JS917GCICIX/2150963_l.jpg?format=500w" alt="Joyous Yves Saint Laurent 'daisy' pearl,gilt and black glass pendant, 1980s">
-                                <span class="sold-label">SOLD</span>
-                            </div>
-                            <div class="sold-title">Joyous Yves Saint Laurent 'daisy' pearl,gilt and black glass pendant, 1980s</div>
-                        </a>
-                    </div>
-                    <div class="sold-card">
-                        <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Kenneth%20Jay%20Lane%201960s%20spectacular%20green%20glass%20and%20clear%20paste%20collar%20necklace">
-                            <div class="sold-image-container">
-                                <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1500395535586-CLWIGJYGFG11ARVGT40I/2479703_l.jpg?format=500w" alt="Kenneth Jay Lane 1960s spectacular green glass and clear paste collar necklace">
-                                <span class="sold-label">SOLD</span>
-                            </div>
-                            <div class="sold-title">Kenneth Jay Lane 1960s spectacular green glass and clear paste collar necklace</div>
-                        </a>
-                    </div>
-                    <div class="sold-card">
-                        <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Stunning%20Marcel%20Boucher%20gilt%20and%20enamel%20%27harlequin%27%20necklace%2C%201960s">
-                            <div class="sold-image-container">
-                                <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1500397109988-V9CXU395C6Y039XU7DMM/2479693_l.jpg?format=500w" alt="Stunning Marcel Boucher gilt and enamel 'harlequin' necklace, 1960s">
-                                <span class="sold-label">SOLD</span>
-                            </div>
-                            <div class="sold-title">Stunning Marcel Boucher gilt and enamel 'harlequin' necklace, 1960s</div>
-                        </a>
-                    </div>
-                    <div class="sold-card">
-                        <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Long%20baroque%20pearl%20necklace%2C%20with%20centrepiece%2C%20Miriam%20Haskell%2C%201950s">
-                            <div class="sold-image-container">
-                                <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1519660821941-DUJVUB4YM0ROBQ7Q01GF/3674743_master.jpg?format=500w" alt="Long baroque pearl necklace, with centrepiece, Miriam Haskell, 1950s">
-                                <span class="sold-label">SOLD</span>
-                            </div>
-                            <div class="sold-title">Long baroque pearl necklace, with centrepiece, Miriam Haskell, 1950s</div>
-                        </a>
-                    </div>
-                    <div class="sold-card">
-                        <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Antique%20Victorian%20Vauxhall%20glass%20necklace%20with%20detachable%20pendant%2C%201850s">
-                            <div class="sold-image-container">
-                                <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1519661572759-KGKF0LB7CPNX6E17W96K/3514183_master.jpg?format=500w" alt="Antique Victorian Vauxhall glass necklace with detachable pendant, 1850s">
-                                <span class="sold-label">SOLD</span>
-                            </div>
-                            <div class="sold-title">Antique Victorian Vauxhall glass necklace with detachable pendant, 1850s</div>
-                        </a>
-                    </div>
-                    <div class="sold-card">
-                        <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Late%2019th%20century%20brass%20and%20glass%20theatrical%20necklace%2C%20France%2E">
-                            <div class="sold-image-container">
-                                <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1519661747021-JL64WKC95FSZLENY3LWC/3513763_master.jpg?format=500w" alt="Late 19th century brass and glass theatrical necklace, France.">
-                                <span class="sold-label">SOLD</span>
-                            </div>
-                            <div class="sold-title">Late 19th century brass and glass theatrical necklace, France.</div>
-                        </a>
-                    </div>
-                    <div class="sold-card">
-                        <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Superb%20deep%20emerald%20glass%20panel%20necklace%2C%20Yves%20Saint%20Laurent%2C%201980s">
-                            <div class="sold-image-container">
-                                <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1519663470918-TKPMVO81246IHMU7WBN4/3407603_master.jpg?format=500w" alt="Superb deep emerald glass panel necklace, Yves Saint Laurent, 1980s">
-                                <span class="sold-label">SOLD</span>
-                            </div>
-                            <div class="sold-title">Superb deep emerald glass panel necklace, Yves Saint Laurent, 1980s</div>
-                        </a>
-                    </div>
-                    <div class="sold-card">
-                        <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Christian%20Dior%20Elegant%20clear%20paste%20and%20pearl%20%5C%22arabesque%5C%22%20necklace%2C%201950s">
-                            <div class="sold-image-container">
-                                <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1520508430565-J0TYT7YE59MJ1KZTIMUY/2150773_master.jpg?format=500w" alt="Christian Dior Elegant clear paste and pearl arabesque necklace, 1950s">
-                                <span class="sold-label">SOLD</span>
-                            </div>
-                            <div class="sold-title">Christian Dior Elegant clear paste and pearl "arabesque" necklace, 1950s</div>
-                        </a>
-                    </div>
-                    <div class="sold-card">
-                        <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Exquisite%20handmade%20Moghul%20style%20necklace%2C%20Chanel%2C%201960s">
-                            <div class="sold-image-container">
-                                <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1520509421574-AQ2M9BPXHI52TJHCSW3P/2150643_l.jpg?format=500w" alt="Exquisite handmade Moghul style necklace, Chanel, 1960s">
-                                <span class="sold-label">SOLD</span>
-                            </div>
-                            <div class="sold-title">Exquisite handmade Moghul style necklace, Chanel, 1960s</div>
-                        </a>
-                    </div>
-                    <div class="sold-card">
-                        <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Moghul%20inspired%20Kenneth%20Lane%201960s%20collar%20and%20bib%20necklace">
-                            <div class="sold-image-container">
-                                <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1520512510207-XMAXY2MC9E3HUEU424QL/1501903_l.jpg?format=500w" alt="Moghul inspired Kenneth Lane 1960s collar and bib necklace">
-                                <span class="sold-label">SOLD</span>
-                            </div>
-                            <div class="sold-title">Moghul inspired Kenneth Lane 1960s collar and bib necklace</div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- SOLD EARRINGS -->
-            <div class="sold-category">
-                <h3>Earrings</h3>
-                <div class="sold-grid">
-                    <div class="sold-card">
-                        <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Striking%2C%20very%20large%20gilt%20metal%20and%20glass%20ear%20clips%2C%20Yves%20Saint%20Laurent%20%2C%201980s">
-                            <div class="sold-image-container">
-                                <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1519661461884-0REKUZX8UN7ANQJSAUVP/3407733_master.jpg?format=500w" alt="Striking, very large gilt metal and glass ear clips, Yves Saint Laurent , 1980s">
-                                <span class="sold-label">SOLD</span>
-                            </div>
-                            <div class="sold-title">Striking, very large gilt metal and glass ear clips, Yves Saint Laurent , 1980s</div>
-                        </a>
-                    </div>
-                    <div class="sold-card">
-                        <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Ruby%20Lucite%20and%20gilt%20metal%20large%20ear%20clips%2C%20Yves%20Saint%20Laurent%20Rive%20Gauche%201980s">
-                            <div class="sold-image-container">
-                                <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1520254387173-T92L6DUNGONW6FMAGEIP/3407353_master.jpg?format=500w" alt="Ruby Lucite and gilt metal large ear clips, Yves Saint Laurent Rive Gauche 1980s">
-                                <span class="sold-label">SOLD</span>
-                            </div>
-                            <div class="sold-title">Ruby Lucite and gilt metal large ear clips, Yves Saint Laurent Rive Gauche 1980s</div>
-                        </a>
-                    </div>
-                    <div class="sold-card">
-                        <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Olive%20green%20Lucite%20and%20gilt%20ear%20clips%20%2C%20Yves%20Saint%20Laurent%20Rive%20Gauche%2C%201980s">
-                            <div class="sold-image-container">
-                                <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1520254176823-FXX71PL4YJFPCTMABBAG/3407373_master.jpg?format=500w" alt="Olive green Lucite and gilt ear clips , Yves Saint Laurent Rive Gauche, 1980s">
-                                <span class="sold-label">SOLD</span>
-                            </div>
-                            <div class="sold-title">Olive green Lucite and gilt ear clips , Yves Saint Laurent Rive Gauche, 1980s</div>
-                        </a>
-                    </div>
-                    <div class="sold-card">
-                        <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Magnificent%20amethyst%20Lucite%20and%20paste%20%27flame%27%20earrings%2C%20Yves%20Saint%20Laurent%2C%201980">
-                            <div class="sold-image-container">
-                                <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1520254539820-39HNOEN1MINKFOSZLZ8I/3407333_master.jpg?format=500w" alt="Magnificent amethyst Lucite and paste 'flame' earrings, Yves Saint Laurent, 1980">
-                                <span class="sold-label">SOLD</span>
-                            </div>
-                            <div class="sold-title">Magnificent amethyst Lucite and paste 'flame' earrings, Yves Saint Laurent, 1980</div>
-                        </a>
-                    </div>
-                    <div class="sold-card">
-                        <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Schreiner%20of%20New%20York%20sculptural%20paste%20and%20baroque%20pearl%20drop%20earrings">
-                            <div class="sold-image-container">
-                                <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1520512707901-BGCN43WRSYJWCLL0A72G/1400683_l.jpg?format=500w" alt="Schreiner of New York sculptural paste and baroque pearl drop earrings">
-                                <span class="sold-label">SOLD</span>
-                            </div>
-                            <div class="sold-title">Schreiner of New York sculptural paste and baroque pearl drop earrings</div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- SOLD BRACELETS -->
-            <div class="sold-category">
-                <h3>Bracelets</h3>
-                <div class="sold-grid">
-                    <div class="sold-card">
-                        <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Mid%20Victorian%20Scottish%20agate%20specimen%20bracelet">
-                            <div class="sold-image-container">
-                                <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1499773721044-UMN883GC1YKZR7BRHLXT/1978933_l.jpg?format=500w" alt="Mid Victorian Scottish agate specimen bracelet">
-                                <span class="sold-label">SOLD</span>
-                            </div>
-                            <div class="sold-title">Mid Victorian Scottish agate specimen bracelet</div>
-                        </a>
-                    </div>
-                    <div class="sold-card">
-                        <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Striking%20pair%20of%20emerald%20paste%20bracelets%2C%20Yves%20Saint%20Laurent%2C%201980s">
-                            <div class="sold-image-container">
-                                <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1519663261851-LBY65D712YD67XIQ1HAR/3407623_master.jpg?format=500w" alt="Striking pair of emerald paste bracelets, Yves Saint Laurent, 1980s">
-                                <span class="sold-label">SOLD</span>
-                            </div>
-                            <div class="sold-title">Striking pair of emerald paste bracelets, Yves Saint Laurent, 1980s</div>
-                        </a>
-                    </div>
-                    <div class="sold-card">
-                        <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Schreiner%20NY%20Glass%20and%20Clear%20Paste%20Five-Row%20Bracelet%20on%20Japanned%20Metal%2C%201960s">
-                            <div class="sold-image-container">
-                                <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1535986061067-DYVJLLJ9Y4DF52NHAQCS/image.png?format=500w" alt="Schreiner NY Glass and Clear Paste Five-Row Bracelet on Japanned Metal, 1960s">
-                                <span class="sold-label">SOLD</span>
-                            </div>
-                            <div class="sold-title">Schreiner NY Glass and Clear Paste Five-Row Bracelet on Japanned Metal, 1960s</div>
-                        </a>
-                    </div>
-                    <div class="sold-card">
-                        <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Limoges%20gilt%20and%20enamel%20bracelet%20of%20exceptional%20size%20and%20quality%2C%201940s">
-                            <div class="sold-image-container">
-                                <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1535999308644-W3O4KIUC0KDNKEJORL8W/image.png?format=500w" alt="Limoges gilt and enamel bracelet of exceptional size and quality, 1940s">
-                                <span class="sold-label">SOLD</span>
-                            </div>
-                            <div class="sold-title">Limoges gilt and enamel bracelet of exceptional size and quality, 1940s</div>
-                        </a>
-                    </div>
-                    <div class="sold-card">
-                        <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Flamand%20Paris%20Art%20Deco%20Bakelite%20and%20anodised%20aluminium%20cuff%20bracelet%2C%201930s">
-                            <div class="sold-image-container">
-                                <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1536001859678-AD7PIJBYQ1HEYJUQVS4Q/image.png?format=500w" alt="Flamand Paris Art Deco Bakelite and anodised aluminium cuff bracelet, 1930s">
-                                <span class="sold-label">SOLD</span>
-                            </div>
-                            <div class="sold-title">Flamand Paris Art Deco Bakelite and anodised aluminium cuff bracelet, 1930s</div>
-                        </a>
-                    </div>
-                    <div class="sold-card">
-                        <a href="mailto:info@louiseferdinando.com?subject=Enquiry%20about%3A%20Phillipe%20Ferrandis%201990s%20huge%20pearl%2C%20Gripoix%20glass%20and%20gilt%20metal%20bracelet">
-                            <div class="sold-image-container">
-                                <img src="https://images.squarespace-cdn.com/content/v1/591daa4415cf7d381831b78d/1536001938775-IHZLEFZGXIQR694G1QVO/image.png?format=500w" alt="Phillipe Ferrandis 1990s huge pearl, Gripoix glass and gilt metal bracelet">
-                                <span class="sold-label">SOLD</span>
-                            </div>
-                            <div class="sold-title">Phillipe Ferrandis 1990s huge pearl, Gripoix glass and gilt metal bracelet</div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-    </main>
-
-    <!-- FOOTER -->
-    <footer>
-        <div class="social-icons">
-            <a href="https://www.instagram.com/louiseferdinando/" target="_blank" rel="noopener" aria-label="Instagram">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-                    <circle cx="12" cy="12" r="5"/>
-                    <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
-                </svg>
-            </a>
-            <a href="https://www.facebook.com/louiseferdinandojewels/" target="_blank" rel="noopener" aria-label="Facebook">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
-                </svg>
-            </a>
-        </div>
-        <div class="footer-links">
-            <a href="mailto:info@louiseferdinando.com">Contact</a>
-        </div>
-    </footer>
-
-</body>
-</html>
+USSÑÐÌVRÖÐÌNMÎLÌ×ÛÏÙÜX]MLÈ[HZYXÝÜX[ØÛÝ\ÚYØ]HÜXÚ[Y[XÙ[]Ü[Û\ÜÏHÛÛ[X[ÓÓÜÜ[Ù]]Û\ÜÏHÛÛ]]HZYXÝÜX[ØÛÝ\ÚYØ]HÜXÚ[Y[XÙ[]Ù]ØOÙ]]Û\ÜÏHÛÛXØ\HYHÙXÝ[ÚY\ÝZÚ[Ë\Z\[ÙY[Y\[\\ÝKXXÙ[]Ë^]\Ë\ØZ[[]\[LNNÈ]Û\ÜÏHÛÛZ[XYÙKXÛÛZ[\[YÈÜÏHÎËÚ[XYÙ\ËÜ]X\\ÜXÙKXÙÛÛKØÛÛ[ÝKÍNLYXM
+MXÙÙÎNÌXÎÌMLNMÌN
+LKSMQ
+ÌLQ
+ÖTLRTÌÍ
+Í×ÛX\Ý\ÏÙÜX]MLÈ[HÝZÚ[ÈZ\Ù[Y\[\ÝHXÙ[]Ë]\ÈØZ[]\[NNÈÜ[Û\ÜÏHÛÛ[X[ÓÓÜÜ[Ù]]Û\ÜÏHÛÛ]]HÝZÚ[ÈZ\Ù[Y\[\ÝHXÙ[]Ë]\ÈØZ[]\[NNÏÙ]ØOÙ]]Û\ÜÏHÛÛXØ\HYHÙXÝ[ÚY\ØÚZ[\[KYÛ\ÜËX[XÛX\\\ÝKY]K\ÝËXXÙ[][ÛZ\[Y[Y][LNMÈ]Û\ÜÏHÛÛZ[XYÙKXÛÛZ[\[YÈÜÏHÎËÚ[XYÙ\ËÜ]X\\ÜXÙKXÙÛÛKØÛÛ[ÝKÍNLYXM
+MXÙÙÎNÌXÎÌMLÍNN
+
+L
+ËQUVMLTPÔËÚ[XYÙKÏÙÜX]MLÈ[HØÚZ[\HÛ\ÜÈ[ÛX\\ÝH]KTÝÈXÙ[]Û\[YY][NMÈÜ[Û\ÜÏHÛÛ[X[ÓÓÜÜ[Ù]]Û\ÜÏHÛÛ]]HØÚZ[\HÛ\ÜÈ[ÛX\\ÝH]KTÝÈXÙ[]Û\[YY][NMÏÙ]ØOÙ]]Û\ÜÏHÛÛXØ\HYHÙXÝ[ÚY[[[ÙÙ\ËYÚ[X[Y[[Y[XXÙ[][ÙY^Ù\[Û[\Ú^KX[\]X[]KLNMÈ]Û\ÜÏHÛÛZ[XYÙKXÛÛZ[\[YÈÜÏHÎËÚ[XYÙ\ËÜ]X\\ÜXÙKXÙÛÛKØÛÛ[ÝKÍNLYXM
+MXÙÙÎNÌXÎÌMLÍNNNLÌ
+
+UÌÓÍÒUPÌÑÑRÔËÚ[XYÙKÏÙÜX]MLÈ[H[[ÙÙ\ÈÚ[[[[Y[XÙ[]Ù^Ù\[Û[Ú^H[]X[]KNMÈÜ[Û\ÜÏHÛÛ[X[ÓÓÜÜ[Ù]]Û\ÜÏHÛÛ]]H[[ÙÙ\ÈÚ[[[[Y[XÙ[]Ù^Ù\[Û[Ú^H[]X[]KNMÏÙ]ØOÙ]]Û\ÜÏHÛÛXØ\HYHÙXÝ[ÚYY[X[\\\ËX\YXÛËXZÙ[]KX[X[Ù\ÙYX[[Z[][KXÝYXXÙ[]LNLÌÈ]Û\ÜÏHÛÛZ[XYÙKXÛÛZ[\[YÈÜÏHÎËÚ[XYÙ\ËÜ]X\\ÜXÙKXÙÛÛKØÛÛ[ÝKÍNLYXM
+MXÙÙÎNÌXÎÌMLÍN
+NMÎPQ
+ÔRTLRVRTUÍKÚ[XYÙKÏÙÜX]MLÈ[H[X[\\È\XÛÈZÙ[]H[[Ù\ÙY[[Z[][HÝYXÙ[]NLÌÈÜ[Û\ÜÏHÛÛ[X[ÓÓÜÜ[Ù]]Û\ÜÏHÛÛ]]H[X[\\È\XÛÈZÙ[]H[[Ù\ÙY[[Z[][HÝYXÙ[]NLÌÏÙ]ØOÙ]]Û\ÜÏHÛÛXØ\HYHÙXÝ[ÚY\[\KY\[\ËLNNLËZYÙK\X\YÜ\Ú^YÛ\ÜËX[YÚ[[Y][XXÙ[]]Û\ÜÏHÛÛZ[XYÙKXÛÛZ[\[YÈÜÏHÎËÚ[XYÙ\ËÜ]X\\ÜXÙKXÙÛÛKØÛÛ[ÝKÍNLYXM
+MXÙÙÎNÌXÎÌMLÍNLÎ
+ÍÍKRRQÖTTMÌTUËÚ[XYÙKÏÙÜX]MLÈ[H[\H\[\ÈNNLÈYÙHX\Ü\Ú^Û\ÜÈ[Ú[Y][XÙ[]Ü[Û\ÜÏHÛÛ[X[ÓÓÜÜ[Ù]]Û\ÜÏHÛÛ]]H[\H\[\ÈNNLÈYÙHX\Ü\Ú^Û\ÜÈ[Ú[Y][XÙ[]Ù]ØOÙ]Ù]Ù]Ù]ÛXZ[KKHÓÕTKOÛÝ\]Û\ÜÏHÛØÚX[ZXÛÛÈHYHÎËÝÝÝË[ÝYÜ[KÛÛKÛÝZ\ÙY\[[ËÈ\Ù]HØ[È[HÛÜ[\\XK[X[H[ÝYÜ[HÝÈY]ÐÞH[HÛHÝÚÙOHÝ\[ÛÛÜÝÚÙK]ÚYHKHÝÚÙK[[XØ\HÝ[ÝÚÙK[[ZÚ[HÝ[XÝHOHÚYHZYÚHHHOHHÏÚ\ÛHÞHLÞOHLHHÏÚ\ÛHÞHMËHÞOHHHH[HÝ\[ÛÛÜÝÚÙOHÛHÏÜÝÏØOHYHÎËÝÝÝËXÙXÛÚËÛÛKÛÝZ\ÙY\[[Ú]Ù[ËÈ\Ù]HØ[È[HÛÜ[\\XK[X[HXÙXÛÚÈÝÈY]ÐÞH[HÛHÝÚÙOHÝ\[ÛÛÜÝÚÙK]ÚYHKHÝÚÙK[[XØ\HÝ[ÝÚÙK[[ZÚ[HÝ[]HLNLØMH
+HMH
+]Ò
+ÝÝ
+NÛKMMØLHHHKLZÞÏÜÝÏØOÙ]]Û\ÜÏHÛÝ\[[ÜÈHYHXZ[Î[ÐÝZ\ÙY\[[ËÛÛHÛÛXÝØOÙ]ÙÛÝ\ØÙOÚ[
